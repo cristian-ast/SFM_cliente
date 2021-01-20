@@ -1,11 +1,11 @@
 import React, { Fragment, useContext} from 'react';
 import { BaseDatosContext } from '../context/BaseDatosContext';
 
-//import Noticia from './Noticia';
+import Noticia from './Noticia';
 
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 
-//import AdsMovil from './AdsMovil';
+import AdsMovil from './AdsMovil';
 
 const Noticias = ({tipo}) => {
 
@@ -23,13 +23,13 @@ const Noticias = ({tipo}) => {
 
     const MostarAnuncios = () => {
         contador++
-        // if (multiploDe3(contador)) {
-        //     return (
-        //         <AdsMovil />
-        //     );
-        // } else {
-        //     return null;
-        // }
+        if (multiploDe3(contador)) {
+            return (
+                <AdsMovil />
+            );
+        } else {
+            return null;
+        }
     }
 
     return (
@@ -37,17 +37,18 @@ const Noticias = ({tipo}) => {
             <div className="contenedorNoticias--titulo">
                 <h3><DoubleArrowIcon/><span className="contenedorNoticias--titulo2">{tipo}</span></h3>
             </div>
+            
             { tipo === "Inicio" ? 
                 <Fragment>
                     {baseDatos.noticias.map((noticia) => (
                         <Fragment>
-                            {/* <Noticia
+                            <Noticia
                                 titulo = {noticia.titulo}
                                 img = {noticia.img} 
                                 url = {noticia.url}
                                 key = {noticia.url}
-                            /> */}
-                            {/* {MostarAnuncios()} */}
+                            />
+                            {MostarAnuncios()}
                         </Fragment>
                     ))}
                 </Fragment>
@@ -58,13 +59,13 @@ const Noticias = ({tipo}) => {
                             { tipo === noticia.tipo 
                             ?
                                 <Fragment>
-                                    {/* <Noticia
+                                    <Noticia
                                         titulo = {noticia.titulo}
                                         img = {noticia.img} 
                                         url = {noticia.url}
                                         key = {noticia.url}
-                                    /> */}
-                                    {/* { MostarAnuncios() } */}
+                                    />
+                                    { MostarAnuncios() }
                                 </Fragment>
                             : null}
                         </Fragment>

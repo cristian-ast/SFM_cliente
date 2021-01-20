@@ -1,6 +1,7 @@
 import BaseDatosProvider from '../context/BaseDatosContext';
 import AnunciosProvider from '../context/AnunciosContext';
 import Container from '../components/Container';
+
 import AdsComputadora from '../components/AdsComputadora';
 import Noticias from '../components/Noticias';
 
