@@ -347,3 +347,13 @@ a {
 .titulo--noticia > p {
   margin-left: 10px;
 }
+
+.politicaDePrivacidad {
+  padding: 25px;
+  text-align: justify;
+  text-indent: 40px;
+}
+
+.politicaDePrivacidad > h4 {
+  text-indent: 0px;
+}
