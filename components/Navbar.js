@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import usuario from '../img/usuario.png';
+//import usuario from '../img/usuario.png';
 
 import HomeIcon from '@material-ui/icons/Home';
 import SportsCricketIcon from '@material-ui/icons/SportsCricket';
@@ -52,7 +52,7 @@ const Navbar = (props) => {
             <Typography variant="h6" className={classes.title}>
               Somos SFM
             </Typography>
-            <Button color="inherit"><img className="logoUsuario" src={usuario} alt="usuario"/></Button>
+            <Button color="inherit"><img className="logoUsuario" src={""} alt="usuario"/></Button>
           </Toolbar>
         </AppBar>
       </div>
@@ -111,7 +111,7 @@ const Navbar = (props) => {
           <p>|</p> 
         </div>
 
-        <Button color="inherit"><img className="logoUsuario" src={usuario} alt="usuario"/></Button>
+        <Button color="inherit"><img className="logoUsuario" src={""} alt="usuario"/></Button>
 
       </div>
     </div>
