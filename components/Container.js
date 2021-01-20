@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import Navbar from './Navbar';
+import {ThemeProvider} from '@material-ui/core/styles';
+import theme from '../temaConfing';
+import Footer from './Footer';
 
 const Container = (props) => (
-    <div>
+    <ThemeProvider theme={theme}>
+
         <Head>
             <meta charset="utf-8" />
             <title>Somos SFM</title>
@@ -15,10 +19,11 @@ const Container = (props) => (
 
         <Navbar/>
 
-        <div className="container p-4">
-            {props.children}
-        </div>
-    </div>
+        {props.children}
+
+        <Footer/>
+
+    </ThemeProvider> 
 )
 
 export default Container;

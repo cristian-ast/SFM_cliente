@@ -158,3 +158,136 @@ a {
       padding: 0;
   }
 }
+
+/*Inicio Css*/
+
+.cuerpo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logoUsuario {
+  width: 25px;
+}
+
+.imglogo {
+  width: 100%;
+  max-width: 420px;
+} 
+
+.contenerdorTextos {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.textos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+.textos > h2 {
+  text-align: center;
+  text-indent: 0px;
+  font-size: 30px;
+  font-family: 'Redressed', cursive;
+}
+
+.contenedorNoticias--titulo {
+  width: 100%;
+  padding: 1px;
+  color: black;
+}
+
+.contenedorNoticias--titulo > h3 {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.contenedorNoticias--titulo2 {
+  margin-left: 15px;
+}
+
+@media only screen and (min-width: 420px) {
+  .imglogo {
+      margin-top: 30px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 420px;
+  } 
+
+  .inicio {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .cuerpo {
+      max-width: 745px;
+  }
+  
+}
+
+.contenedor--noticias {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.contador {
+  display: none;
+}
+
+.Asd-computadora {
+  display: none;
+}
+
+@media only screen and (min-width: 420px) {
+  .Asd-computadora {
+      color: white;
+      display: block;
+      margin: 20px;
+      padding: 10px;
+      margin-top: 85px;
+      width: 320px;
+      border: 1px solid black;
+      border-radius: 5px;
+      background: #bdc3c7;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      height: 100%;
+  }
+
+  .Asd-computadora--p {
+      font-size: 30px;
+      font-family: 'Redressed', cursive;
+      font-weight: bolder;
+  }
+}
+
+.Ads {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ImagenAds {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+}
