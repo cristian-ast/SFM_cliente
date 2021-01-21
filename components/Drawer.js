@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -46,10 +47,6 @@ const NavDrawer = (props) => {
     setState({ ...state, [anchor]: open });
   };
 
-  const Redirecionar = (url) => {
-    props.history.push(url);
-  }
-
   const list = (anchor) => (
     <div
       className={clsx(classes.list, {
@@ -61,72 +58,92 @@ const NavDrawer = (props) => {
     >
       <List>
       
-        <ListItem button onClick={() => Redirecionar('/')}>
-          <ListItemIcon>
-            <HomeIcon/>
-          </ListItemIcon>
-          <ListItemText primary={"Inicio"} />
-        </ListItem>
-
-        <ListItem button onClick={() => Redirecionar('/Actualidad')}>
-          <ListItemIcon>
-            <ImportContactsIcon/>
-          </ListItemIcon>
-          <ListItemText primary={"Actualidad"} />
-        </ListItem>
-
-        <ListItem button onClick={() => Redirecionar('/Deportes')}>
-          <ListItemIcon>
-            <SportsCricketIcon/>
-          </ListItemIcon>
-          <ListItemText primary={"Deportes"} />
-        </ListItem>
-
-        <ListItem button onClick={() => Redirecionar('/Justicia')}>
-          <ListItemIcon>
-            <PolicyIcon/>
-          </ListItemIcon>
-          <ListItemText primary={"Justicia"} />
-        </ListItem>
-
-        <ListItem button onClick={() => Redirecionar('/Farandula')}>
-          <ListItemIcon>
-            <MusicNoteIcon/>
-          </ListItemIcon>
-          <ListItemText primary={"Farándula"} />
-        </ListItem>
-
-        <ListItem button onClick={() => Redirecionar('/Economia')}>
-          <ListItemIcon>
-            <PollIcon/>
-          </ListItemIcon>
-          <ListItemText primary={"Economía"} />
-        </ListItem>
+        <Link href="/">
+          <ListItem button>
+            <ListItemIcon>
+              <HomeIcon/>
+            </ListItemIcon>
+            <ListItemText primary={"Inicio"} />
+          </ListItem>
+        </Link>
+        
+        <Link href="/Actualidad">
+          <ListItem button>
+            <ListItemIcon>
+              <ImportContactsIcon/>
+            </ListItemIcon>
+            <ListItemText primary={"Actualidad"} />
+          </ListItem>
+        </Link>
+        
+        <Link href="/Deportes">
+          <ListItem button>
+            <ListItemIcon>
+              <SportsCricketIcon/>
+            </ListItemIcon>
+            <ListItemText primary={"Deportes"} />
+          </ListItem>
+        </Link>
+        
+        <Link href="/Justicia">
+          <ListItem button>
+            <ListItemIcon>
+              <PolicyIcon/>
+            </ListItemIcon>
+            <ListItemText primary={"Justicia"} />
+          </ListItem>
+        </Link>
+        
+        <Link href="/Farandula">
+          <ListItem button>
+            <ListItemIcon>
+              <MusicNoteIcon/>
+            </ListItemIcon>
+            <ListItemText primary={"Farándula"} />
+          </ListItem>
+        </Link>
+        
+        <Link href="/Economia">
+          <ListItem button>
+            <ListItemIcon>
+              <PollIcon/>
+            </ListItemIcon>
+            <ListItemText primary={"Economía"} />
+          </ListItem>
+        </Link>
+        
    
       </List>
       <Divider />
       <List>
 
-        <ListItem button onClick={() => Redirecionar('/Sobre-Nosotros')}>
+      {/* <Link href="/Sobre-Nosotros">
+        <ListItem button>
           <ListItemIcon>
             <InfoIcon/>
           </ListItemIcon>
           <ListItemText primary={"Sobre Nosotros"} />
         </ListItem>
-
-        <ListItem button onClick={() => Redirecionar('/Contacto')}>
+      </Link> */}
+        
+      {/* <Link href="/Contacto">
+        <ListItem button>
           <ListItemIcon>
             <ContactsIcon/>
           </ListItemIcon>
           <ListItemText primary={"Contacto"} />
         </ListItem>
-
-        <ListItem button onClick={() => Redirecionar('/Politicas-De-Uso')}>
+      </Link> */}
+        
+      <Link href="/Politicas-De-Uso">
+        <ListItem button>
           <ListItemIcon>
             <VerifiedUserIcon/>
           </ListItemIcon>
           <ListItemText primary={"Políticas de uso"} />
         </ListItem>
+      </Link>
+        
 
       </List>
     </div>

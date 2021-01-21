@@ -1,21 +1,22 @@
 import React from 'react';
+import Link from 'next/link';
 
-const Noticia = ({history, titulo, img, url}) => {
-
-    const Redirecionar = (url) => {
-      history.push(url);
-    }
+const Noticia = ({titulo, img, url}) => {
+    
+    //Recordar que los url de la api no traen el " / " al inicio, pero los del context si!!!
 
     return (
-        <div 
-            style={{ backgroundImage: `url(${img})`}}
-            className="noticia--indivudual" 
-            onClick={() => Redirecionar(url)}
-        >
-            <div className="titulo--noticia">
-                <p>{titulo}</p>
+        <Link href={"/noticias" + url}>
+            <div 
+                style={{ backgroundImage: `url(${img})`}}
+                className="noticia--indivudual" 
+            >
+                <div className="titulo--noticia">
+                    <p>{titulo}</p>
+                </div>
             </div>
-        </div>
+        </Link>
+        
     );
 }
 

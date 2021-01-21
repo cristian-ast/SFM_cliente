@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Link from 'next/link';
+
 import { makeStyles } from '@material-ui/core/styles';
 
 import AppBar from '@material-ui/core/AppBar';
@@ -15,8 +17,8 @@ import PolicyIcon from '@material-ui/icons/Policy';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
 import PollIcon from '@material-ui/icons/Poll';
 
-import InfoIcon from '@material-ui/icons/Info';
-import ContactsIcon from '@material-ui/icons/Contacts';
+//import InfoIcon from '@material-ui/icons/Info';
+//import ContactsIcon from '@material-ui/icons/Contacts';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import ImportContactsIcon from '@material-ui/icons/ImportContacts';
 
@@ -37,10 +39,6 @@ const useStyles = makeStyles((theme) => ({
 const Navbar = (props) => {
 
   const classes = useStyles();
-
-  const Redirecionar = (url) => {
-    props.history.push(url);
-  }
 
 
   return (
@@ -69,45 +67,64 @@ const Navbar = (props) => {
           <p>|</p> 
         </div>
 
-        <div className="navbar--computadoras--boton" onClick={() => Redirecionar('/')}>
-            <HomeIcon style={{ fontSize: 20 }}/> <p>Inicio</p> 
-        </div>
-
-        <div className="navbar--computadoras--boton" onClick={() => Redirecionar('/Actualidad')}>
+        <Link href="/">
+          <div className="navbar--computadoras--boton">
+              <HomeIcon style={{ fontSize: 20 }}/> <p>Inicio</p> 
+          </div>
+        </Link>
+        
+        <Link href="/Actualidad">
+          <div className="navbar--computadoras--boton" >
             <ImportContactsIcon style={{ fontSize: 20 }} /> <p>Actualidad</p> 
-        </div>
-
-        <div className="navbar--computadoras--boton" onClick={() => Redirecionar('/Deportes')}>
+          </div>
+        </Link>
+        
+        <Link href="/Deportes">
+          <div className="navbar--computadoras--boton">
             <SportsCricketIcon style={{ fontSize: 20 }} /> <p>Deportes</p> 
-        </div>
-
-        <div className="navbar--computadoras--boton" onClick={() => Redirecionar('/Justicia')}>
+          </div>
+        </Link>
+        
+        <Link href="/Justicia">
+          <div className="navbar--computadoras--boton">
             <PolicyIcon style={{ fontSize: 20 }} /> <p>Justicia</p> 
-        </div>
-
-        <div className="navbar--computadoras--boton" onClick={() => Redirecionar('/Farandula')}>
+          </div>
+        </Link>
+        
+        <Link href="/Farandula">
+          <div className="navbar--computadoras--boton">
             <MusicNoteIcon style={{ fontSize: 20 }} /> <p>Farándula</p> 
-        </div>
-
-        <div className="navbar--computadoras--boton" onClick={() => Redirecionar('Economia')}>
+          </div>
+        </Link>
+        
+        <Link href="/Economia">
+          <div className="navbar--computadoras--boton">
             <PollIcon style={{ fontSize: 20 }} /> <p>Economía</p> 
-        </div>
-
+          </div>
+        </Link>
+        
         <div className="navbar--computadoras--division">
           <p>|</p> 
         </div>
 
-        <div className="navbar--computadoras--boton" onClick={() => Redirecionar('/Sobre-Nosotros')}>
+        {/* <Link href="/Sobre-Nosotros">
+          <div className="navbar--computadoras--boton">
             <InfoIcon style={{ fontSize: 20 }} /> <p>Sobre Nosotros</p> 
-        </div>
-
-        <div className="navbar--computadoras--boton" onClick={() => Redirecionar('/Contacto')}>
+          </div>
+        </Link> */}
+        
+        {/* <Link href="/Contacto">
+          <div className="navbar--computadoras--boton">
             <ContactsIcon style={{ fontSize: 20 }} /> <p>Contacto</p> 
-        </div>
-
-        <div className="navbar--computadoras--boton" onClick={() => Redirecionar('/Politicas-De-Uso')}>
+          </div>
+        </Link> */}
+        
+        <Link href="/Politicas-De-Uso">
+          <div className="navbar--computadoras--boton">
             <VerifiedUserIcon style={{ fontSize: 20 }} /> <p>Politicas de uso</p> 
-        </div>
+          </div>
+        </Link>
+        
 
         <div className="navbar--computadoras--division">
           <p>|</p> 
