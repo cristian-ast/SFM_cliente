@@ -1,15 +1,24 @@
+import Head from 'next/head';
 import BaseDatosProvider from '../context/BaseDatosContext';
 import AnunciosProvider from '../context/AnunciosContext';
 import Container from '../components/Container';
 
 import AdsComputadora from '../components/AdsComputadora';
-import Noticias from '../components/Noticias';
 
-const PoliticasDeUso = () => {
+const PoliticasDePrivacidad = () => {
     return (
         <BaseDatosProvider>
             <AnunciosProvider>
                 <Container>
+                    <Head>
+                        <title>Somos SFM - Politicas de Privacidad </title>
+
+                        {/*Open Graph / Facebook*/}
+                        <meta property="og:title" content="Somos SFM - Políticas de Privacidad"/>
+
+                        {/* Twitter */}
+                        <meta property="twitter:title" content="Somos SFM - Políticas de Privacidad"/>
+                    </Head>
                     <div className="sub-inicio">
                         <div className="sub-cuerpo">
                             <div className="politicaDePrivacidad">
@@ -39,4 +48,4 @@ const PoliticasDeUso = () => {
     );
 }
 
-export default PoliticasDeUso;
+export default PoliticasDePrivacidad;

@@ -46,6 +46,11 @@ const PageNoticia = ({datos}) => {
                                 <meta property="og:description" content={datos.cuerpo[0].slice( 0 , 95) + "..."} />
                                 <meta property="og:image" content={datos.imgBig}></meta>
 
+                                {/* Twitter */}
+                                <meta property="twitter:title" content={datos.titulo}/>
+                                <meta property="twitter:description" content={datos.cuerpo[0].slice( 0 , 95) + "..."}/>
+                                <meta property="twitter:image" content={datos.imgBig}></meta>
+
                             </Head>
 
                             <div className="cuerpo--noticias--cabecera">

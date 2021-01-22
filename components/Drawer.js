@@ -135,12 +135,12 @@ const NavDrawer = (props) => {
         </ListItem>
       </Link> */}
         
-      <Link href="/Politicas-De-Uso">
+      <Link href="/Politicas-De-Privacidad">
         <ListItem button>
           <ListItemIcon>
             <VerifiedUserIcon/>
           </ListItemIcon>
-          <ListItemText primary={"Políticas de uso"} />
+          <ListItemText primary={"Políticas de Privacidad"} />
         </ListItem>
       </Link>
         

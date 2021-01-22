@@ -119,9 +119,9 @@ const Navbar = (props) => {
           </div>
         </Link> */}
         
-        <Link href="/Politicas-De-Uso">
+        <Link href="/Politicas-De-Privacidad">
           <div className="navbar--computadoras--boton">
-            <VerifiedUserIcon style={{ fontSize: 20 }} /> <p>Politicas de uso</p> 
+            <VerifiedUserIcon style={{ fontSize: 20 }} /> <p>Políticas de Privacidad</p> 
           </div>
         </Link>
         
