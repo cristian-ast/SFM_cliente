@@ -49,10 +49,13 @@ const Navbar = (props) => {
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
               <NavDrawer />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>
-              Somos SFM
-            </Typography>
-            <Button color="inherit"><img className="logoUsuario" src={usuario} alt="usuario"/></Button>
+            <div className="titulo-logo-menu-movil">
+              <Typography variant="h6" className={classes.title}>
+                Somos SFM
+              </Typography>
+              <Button color="inherit"><img className="logoUsuario" src={usuario} alt="usuario"/></Button>
+            </div>
+            
           </Toolbar>
         </AppBar>
       </div>
