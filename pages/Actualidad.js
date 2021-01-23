@@ -20,11 +20,13 @@ const Actualidad = () => {
             {/* Twitter */}
             <meta property="twitter:title" content="Somos SFM - Actualidad"/>
           </Head>
-          <div className="sub-inicio">
-              <div className="sub-cuerpo">
-                  <Noticias tipo = "Actualidad"/>
-              </div>
-              <AdsComputadora />
+          <div className="inicio">
+            <div className="sub-inicio">
+                <div className="sub-cuerpo">
+                    <Noticias tipo = "Actualidad"/>
+                </div>
+                <AdsComputadora />
+            </div>
           </div>
         </Container> 
       </AnunciosProvider>

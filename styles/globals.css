@@ -3,7 +3,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  position: relative;
+  min-height: 100vh;
 }
 
 a {
@@ -15,12 +17,23 @@ a {
   box-sizing: border-box;
 }
 
+.inicio {
+  padding-bottom: 2.5rem; 
+}
+
 .navbar--computadoras {
   display: none;
 }
 
 .logoUsuario {
   width: 25px;
+}
+
+.footerComponent {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;  
 }
 
 .footer {
@@ -273,7 +286,6 @@ a {
       background: #bdc3c7;  /* fallback for old browsers */
       background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
       background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      height: 100%;
   }
 
   .Asd-computadora--p {
@@ -441,5 +453,51 @@ a {
       justify-content: center;
       align-items: center;
   }
+  .contenedor-form {
+    width: 400px;
+  }
+
+  .campo-form {
+    width: 90%;
+  }
   
+}
+
+.form-usuario {
+  width: 90%;
+  max-width: 400px;
+  background-color: #f8f1f1;
+  border-radius: 15px;
+  margin-top: 40px;
+  border: 1px solid black;
+  -webkit-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+  
+}
+
+.contenedor-form {
+  padding: 20px;
+}
+
+.campo-form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-form > label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.campo-form > input {
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-iniciar-secion:hover {
+  background-color: rgb(223, 223, 223);
 }

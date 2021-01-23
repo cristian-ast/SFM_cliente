@@ -20,12 +20,15 @@ const Economia = () => {
                         {/* Twitter */}
                         <meta property="twitter:title" content="Somos SFM - Economía"/>
                     </Head>
-                    <div className="sub-inicio">
-                        <div className="sub-cuerpo">
-                            <Noticias tipo = "Economía"/>
+                    <div className="inicio">
+                        <div className="sub-inicio">
+                            <div className="sub-cuerpo">
+                                <Noticias tipo = "Economía"/>
+                            </div>
+                            <AdsComputadora />
                         </div>
-                        <AdsComputadora />
                     </div>
+                    
                 </Container> 
             </AnunciosProvider>
         </BaseDatosProvider>

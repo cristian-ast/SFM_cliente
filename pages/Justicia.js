@@ -20,12 +20,15 @@ const Justicia = () => {
                         {/* Twitter */}
                         <meta property="twitter:title" content="Somos SFM - Justicia"/>
                     </Head>
-                    <div className="sub-inicio">
-                        <div className="sub-cuerpo">
-                            <Noticias tipo = "Justicia"/>
+                    <div className="inicio">
+                        <div className="sub-inicio">
+                            <div className="sub-cuerpo">
+                                <Noticias tipo = "Justicia"/>
+                            </div>
+                            <AdsComputadora />
                         </div>
-                        <AdsComputadora />
                     </div>
+                    
                 </Container> 
             </AnunciosProvider>
         </BaseDatosProvider>

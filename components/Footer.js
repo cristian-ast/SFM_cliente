@@ -4,7 +4,7 @@ import whatsapp from '../images/whatsapp.png';
 
 const Footer = (props) => {
     return (
-        <div>
+        <div className="footerComponent">
             <footer className="footer">
                 <div className="contenidoFooter">
                     <div className="redes">

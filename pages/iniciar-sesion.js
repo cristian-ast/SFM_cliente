@@ -3,7 +3,6 @@ import Head from 'next/head';
 import BaseDatosProvider from '../context/BaseDatosContext';
 import AnunciosProvider from '../context/AnunciosContext';
 import Container from '../components/Container';
-import AdsComputadora from '../components/AdsComputadora';
 
 import AlertaContext from '../context/alertas/alertaContext';
 import AuthContext from '../context/autenticacion/authContext';
@@ -48,13 +47,13 @@ const IniciarSesion = () => {
     const onSubmit = e => {
         e.preventDefault();
 
-        // Validar que no haya campos vacios
-        if(email.trim() === '' || password.trim() === '') {
-            mostrarAlerta('Todos los campos son obligatorios', 'alerta-error');
-        }
+        // // Validar que no haya campos vacios
+        // if(email.trim() === '' || password.trim() === '') {
+        //     mostrarAlerta('Todos los campos son obligatorios', 'alerta-error');
+        // }
 
-        // Pasarlo al action
-        iniciarSesion({ email, password });
+        // // Pasarlo al action
+        // iniciarSesion({ email, password });
     }
 
     return (
@@ -70,46 +69,47 @@ const IniciarSesion = () => {
                         {/* Twitter */}
                         <meta property="twitter:title" content="Somos SFM - Iniciar Sesión"/>
                     </Head>
-                    <div className="sub-inicio">
-                        <div className="sub-cuerpo">
-                            <div className="form-usuario">
-                                <div className="contenedor-form sombra-dark">
-                                    <h1>Iniciar Sesión</h1>
-                                    <form
-                                        onSubmit={onSubmit}
-                                    >
-                                        <div className="campo-form">
-                                            <label htmlFor="email">Email</label>
-                                            <input
-                                                type="email"
-                                                id="email"
-                                                name="email"
-                                                placeholder="Ingrese su Correo"
-                                                onChange={onChange}
-                                            />
-                                        </div>
-                                        <div className="campo-form">
-                                            <label htmlFor="email">Contraseña</label>
-                                            <input
-                                                type="password"
-                                                id="password"
-                                                name="password"
-                                                placeholder="Ingrese su Contraseña"
-                                                onChange={onChange}
-                                            />
-                                        </div>
-                                        <div className="campo-form">
-                                            <input
-                                                type="submit"
-                                                className="btn btn-primario btn-block"
-                                                value="Iniciar Sesión"
-                                            />
-                                        </div>
-                                    </form>
+                    <div className="inicio">
+                        <div className="sub-inicio">
+                            <div className="sub-cuerpo">
+                                <div className="form-usuario">
+                                    <div className="contenedor-form">
+                                        <h2>Iniciar Sesión</h2>
+                                        <form
+                                            onSubmit={onSubmit}
+                                        >
+                                            <div className="campo-form">
+                                                <label htmlFor="email">Email</label>
+                                                <input
+                                                    type="email"
+                                                    id="email"
+                                                    name="email"
+                                                    placeholder="Ingrese su Correo"
+                                                    onChange={onChange}
+                                                />
+                                            </div>
+                                            <div className="campo-form">
+                                                <label htmlFor="email">Contraseña</label>
+                                                <input
+                                                    type="password"
+                                                    id="password"
+                                                    name="password"
+                                                    placeholder="Ingrese su Contraseña"
+                                                    onChange={onChange}
+                                                />
+                                            </div>
+                                            <div className="campo-form">
+                                                <input
+                                                    type="submit"
+                                                    className="btn-iniciar-secion"
+                                                    value="Iniciar Sesión"
+                                                />
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <AdsComputadora />
                     </div>
                 </Container> 
             </AnunciosProvider>

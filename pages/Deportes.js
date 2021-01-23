@@ -20,11 +20,13 @@ const Deportes = () => {
                         {/* Twitter */}
                         <meta property="twitter:title" content="Somos SFM - Deportes"/>
                     </Head>
-                    <div className="sub-inicio">
-                        <div className="sub-cuerpo">
-                            <Noticias tipo = "Deportes"/>
+                    <div className="inicio">
+                        <div className="sub-inicio">
+                            <div className="sub-cuerpo">
+                                <Noticias tipo = "Deportes"/>
+                            </div>
+                            <AdsComputadora />
                         </div>
-                        <AdsComputadora />
                     </div>
                 </Container> 
             </AnunciosProvider>
