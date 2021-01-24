@@ -27,6 +27,55 @@ const BaseDatosProvider = (props) => {
             //   ]
             // },
             {
+              titulo : "Hallan mujer italiana muerta dentro de una nevera en Punta Cana",
+              url : "/Hallan-mujer-italiana-muerta-dentro-de-una-nevera-en-Punta-Cana",
+              fecha : "ENERO 22, 2021",
+              autor : "Victor Manuel",
+              tipo : "Justicia",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/Unamujerdenacionalidaditalianafuehalladamuerta.9aca90e0.png",
+              imgBig : "https://festive-fermat-68fe12.netlify.app/static/media/UnamujerdenacionalidaditalianafuehalladamuertaM.f73ed20e.png",
+              video : null,
+              cuerpo : [
+                "Una mujer de nacionalidad italiana fue hallada muerta dentro de un refrigerador en su vivienda  en un residencial de Bávaro.",
+                "Claudia Lopone, italiana, pero residente en el país fue encontrada muerta dentro de una nevera en la casa en la que vivía, en un residencial de la zona de Bávaro.",
+                "El encargado la Dirección Central de Investigaciones Criminales de la Policía Nacional en esta localidad, Frank Teófilo Valenzuela, dijo que por el hecho hay dos personas de origen italiano, para fines de investigación.",
+                "Hay dos personas detenidas para investigación sobre el caso de una italiana que fue encontrada sin vida dentro de un refrigerador en la zona de Bávaro, adelantó el oficial policial.",
+                "Explicó que los apresados son también Italianos, mientras que hay un dominicano al que buscan por su presunta participación en el hecho. Detalló que la señora Claudia Lopone, italiana pero residente en el país fue encontrada muerta dentro de una nevera en la casa en la que vivía, en un residencial de la zona de Bávaro.",
+                "Las autoridades no detallaron si la fémina fue asesinada o encerrada viva en el refrigerador."
+              ]
+            },
+            {
+              titulo : "PN y ERD desmantelan gallera clandestina en Los Miches de Dajabón",
+              url : "/PN-y-ERD-desmantelan-gallera-clandestina-en-Los-Miches-de-Dajabon",
+              fecha : "ENERO 22, 2021",
+              autor : "Victor Manuel",
+              tipo : "Justicia",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/PNyERDdesmantelangalleraclandestina.a5f46c3d.jpeg",
+              imgBig : "https://festive-fermat-68fe12.netlify.app/static/media/PNyERDdesmantelangalleraclandestinaM.f980fc5c.jpeg",
+              video : null,
+              cuerpo : [
+                "PN y ERD desmantelan gallera clandestina en Los Miches de Dajabón; ocupan motocicletas y otras evidencias. ",
+                "Dajabón. -Miembros de la Policía Nacional y del Ejército de la República Dominicana desmantelaron ayer una gallera clandestina que operaba en la comunidad el Cerro de Juan Calvo, de la sección Los Miches, en la ciudad fronteriza de Dajabón. ",
+                "En el lugar, donde varios individuos jugaban gallos y lograron escapar, fueron dejadas abandonadas cinco motocicletas, cuatro tanques plásticos pequeños con botellas de cerveza y de agua, dos gallos vivos y dos muertos, además de cuatro vasijas con comida. ",
+                "En cuanto a las evidencias encontradas, fueron llevadas al Departamento de la Policía de Dajabón, donde se procederá a depurar las motocicletas, a fin de identificar sus propietarios y proceder a su búsqueda para apresarlos y someterlos a la justicia."
+              ]
+            },
+            {
+              titulo : "Incendio en Serum Institute of India",
+              url : "/Incendio-en-Serum-Institute-of-India",
+              fecha : "ENERO 21, 2021",
+              autor : "Victor Manuel",
+              tipo : "Actualidad",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/Unincendioseregistr%C3%B3lama%C3%B1ana.acdac2d8.jpg",
+              imgBig : "https://festive-fermat-68fe12.netlify.app/static/media/Unincendioseregistr%C3%B3lama%C3%B1anaM.ffe67b4e.jpg",
+              video : null,
+              cuerpo : [
+                "Un incendio se registró la mañana de este jueves en la compañía india de biotecnología y productos farmacéuticos, Serum Institute of India, el mayor fabricante de vacunas del mundo, según imágenes mostradas en la televisión local.",
+                "En el Serum Institute of India se producen al momento lotes de millones de dosis de la vacuna contra el covid-19 desarrollada por AstraZeneca y la universidad de Oxford, sin embargo, de acuerdo a los reportes de medios que captaron la catástrofe, un colaborador de la empresa aseguró que la producción no se verá afectada.",
+                "“No afectará la producción de la vacuna Covid-19”, dijo a AFP una fuente de la empresa, agregando que el incendio se produjo en una nueva planta en construcción, ubicada en la ciudad de Pune, en el estado de Maharashtra, en el oeste de India."
+              ]
+            },
+            {
               titulo : "Aclara desconocidos usurpan nombre de general Then para estafar",
               url : "/Policia-Nacional-aclara-desconocidos-usurpan-nombre-de-general-Then-para-estafar",
               fecha : "ENERO 17, 2021",
