@@ -31,6 +31,8 @@ const PageNoticia = ({datos}) => {
         }
     }
 
+    console.log(datos.imgBig);
+
     return (
         <BaseDatosProvider>
             <AnunciosProvider>
