@@ -5,8 +5,14 @@ import PanelBuscadorVerNoticia from './PanelBuscadorVerNoticia';
 const PanelBuscador = () => {
 
     const { baseDatos } = useContext(BaseDatosContext);
-    
 
+    let noticiasRecientes = []
+    let i = 0;
+    while (i < 9) {
+        noticiasRecientes[i] = baseDatos.noticias[i];
+        i++;
+    }
+    
     const onChange = e => {
         
     }
@@ -41,7 +47,10 @@ const PanelBuscador = () => {
             </div>
             <br/>
             <div  className="buscador-noticias-cuerpo">
-                {baseDatos.noticias.map((noticia) => (
+
+                <h4>Noticias Recientes</h4>
+                
+                {noticiasRecientes.map((noticia) => (
                     <PanelBuscadorVerNoticia
                         titulo = {noticia.titulo}
                         img = {noticia.img} 

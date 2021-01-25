@@ -106,18 +106,23 @@ a {
   padding-left: 20px;
 }
 
+.z-index-b {
+  z-index: 1;
+}
+
 @media only screen and (min-width: 420px) {
   .navbar--moviles {
       display: none;
   }
   
   .navbar--computadoras {
+      position: fixed;
+      z-index: 2;
       display: flex;
       align-items: center;
       justify-content: space-around;
       background-color: #2196f3;
       width: 100%;
-      position: fixed;
       -webkit-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
       -moz-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
       box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
@@ -518,14 +523,6 @@ a {
   border-right: 2px solid black;
 }
 
-.editor-noticias {
-  margin-top: 60px;
-  display: flex;
-  width: 100%;
-  background-color: #ffffff;
-  height: 550px;
-}
-
 .buscador-noticias-cabecera {
   display: flex;
   margin-top: 20px;
@@ -585,4 +582,43 @@ a {
 
 .PanelBuscadorVerNoticia-p > p {
   font-size: 13px;
+}
+
+/*Editor de las noticias*/
+.editor-noticias{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  height: 100%;
+}
+
+.contenedor-editor {
+  margin-top: 30px;
+  padding: 20px;
+  width: 100%;
+  max-width: 530px;
+}
+
+.panel-editor-campos {
+  margin: 10px;
+}
+
+.panel-editor-campos > input, select, textarea {
+  margin-top: 8px;
+  font-family: 'Roboto', sans-serif;;
+}
+
+.panel-editor-botones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.panel-editor-campos > label {
+  font-weight: bolder;
+}
+
+.campo-textarea {
+  height: 150px;
 }

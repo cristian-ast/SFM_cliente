@@ -3,6 +3,7 @@ import BaseDatosProvider from '../context/BaseDatosContext';
 import AnunciosProvider from '../context/AnunciosContext';
 import Container from '../components/Container';
 import PanelBuscador from '../components/PanelBuscador';
+import PanelEditor from '../components/PanelEditor';
 
 import logo from '../images/portada.jpg';
 
@@ -39,10 +40,7 @@ const Panel = () => {
 
                             <PanelBuscador/>
 
-                            <div className="editor-noticias" >
-
-                            </div>
-                            
+                            <PanelEditor/>
                         </div>
                     </div>
                 </Container> 

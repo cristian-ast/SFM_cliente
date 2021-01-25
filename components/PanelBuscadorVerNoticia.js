@@ -9,7 +9,7 @@ const PanelBuscadorVerNoticia = ({titulo, img, url}) => {
             <div className="PanelBuscadorVerNoticia-img-botones">
                 <img className="PanelBuscadorVerNoticia-imagen" src={img} alt="image" />
                 <Button
-                    className="PanelBuscadorVerNoticia-img-botones"
+                    className="PanelBuscadorVerNoticia-img-botones z-index-b"
                     color="#ab003c"
                     size="small"
                     startIcon={<DeleteIcon />}
@@ -17,7 +17,7 @@ const PanelBuscadorVerNoticia = ({titulo, img, url}) => {
                     Borrar
                 </Button>
                 <Button
-                    className="PanelBuscadorVerNoticia-img-botones"
+                    className="PanelBuscadorVerNoticia-img-botones z-index-b"
                     color="#ab003c"
                     size="small"
                     startIcon={<EditIcon />}
