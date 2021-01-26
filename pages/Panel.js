@@ -1,15 +1,17 @@
+import React, { useState } from 'react';
 import Head from 'next/head';
 import BaseDatosProvider from '../context/BaseDatosContext';
 import AnunciosProvider from '../context/AnunciosContext';
 import Container from '../components/Container';
 import PanelBuscador from '../components/PanelBuscador';
 import PanelEditor from '../components/PanelEditor';
+import ContenedorPanelEditorMuenu from '../components/ContenedorPanelEditorMenu';
 
 import logo from '../images/portada.jpg';
 
 const Panel = () => {
 
-    
+    const [ ningunaNoticiaSelecionada, guardarNingunaNoticiaSelecionada ] = useState(true);
 
     return (
         <BaseDatosProvider>
@@ -37,10 +39,19 @@ const Panel = () => {
                     </Head>
                     <div className="inicio">
                         <div className="panel-contenedor">
-
                             <PanelBuscador/>
 
-                            <PanelEditor/>
+                            <div className="contenedor-panel-editor">
+                                {ningunaNoticiaSelecionada ? 
+                                    <ContenedorPanelEditorMuenu 
+                                        guardarNingunaNoticiaSelecionada={guardarNingunaNoticiaSelecionada} 
+                                    /> 
+                                : 
+                                    <PanelEditor 
+                                        guardarNingunaNoticiaSelecionada={guardarNingunaNoticiaSelecionada} 
+                                    /> 
+                                }
+                            </div>
                         </div>
                     </div>
                 </Container> 

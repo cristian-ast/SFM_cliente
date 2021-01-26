@@ -1,18 +1,38 @@
-import React, { useContext, Fragment } from 'react';
+import React, { useContext, useState } from 'react';
 import { BaseDatosContext } from '../context/BaseDatosContext';
 import Button from '@material-ui/core/Button';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import SaveIcon from '@material-ui/icons/Save';
 import CancelIcon from '@material-ui/icons/Cancel';
 
-const PanelEditor = () => {
+const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
 
     const { baseDatos } = useContext(BaseDatosContext);
     
 
+    // State para crear noticia
+    const [nuevaNoticia, guardarNuevaNoticia] = useState({
+        titulo : "",
+        url : "",
+        fecha : "",
+        autor : "",
+        tipo : "",
+        img : "",
+        imgBig : "",
+        video : "",
+        cuerpo : []
+    });
+
+    // extraer la noticia
+    const { titulo, url, fecha, autor, tipo, img, imgBig, video, cuerpo } = nuevaNoticia;
+
     const onChange = e => {
-        
+        guardarNuevaNoticia({
+            ...nuevaNoticia,
+            [e.target.name] : e.target.value
+        })
     }
+
 
     const onSubmit = e => {
         e.preventDefault();
@@ -22,7 +42,7 @@ const PanelEditor = () => {
         <div className="editor-noticias" >
 
             <div className="contenedor-editor">
-                <center><h3>Crear o Editar noticia</h3></center>
+                <center><h3>Crear Nueva Noticia</h3></center>
                 <form
                         onSubmit={onSubmit}
                     >
@@ -147,6 +167,7 @@ const PanelEditor = () => {
                                 className="PanelBuscadorVerNoticia-img-botones z-index-b"
                                 color="#ab003c"
                                 startIcon={<CancelIcon />}
+                                onClick={ () => {guardarNingunaNoticiaSelecionada(true)}}
                             >
                                 Cancelar
                             </Button>
