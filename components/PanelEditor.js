@@ -4,6 +4,8 @@ import Button from '@material-ui/core/Button';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import SaveIcon from '@material-ui/icons/Save';
 import CancelIcon from '@material-ui/icons/Cancel';
+import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
+import VistaPreviavideo from './VistaPreviaVideo';
 
 const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
 
@@ -33,6 +35,18 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
         })
     }
 
+    const [ estadoVideo, guardarEstadoVideo ] = useState({
+        siVideo : false
+    });
+
+    // extraer la Estado del Video
+    const { siVideo } = estadoVideo;
+
+    const onChangeVideo = e => {
+        guardarEstadoVideo({
+           [e.target.name] : e.target.value
+        })
+    }
 
     const onSubmit = e => {
         e.preventDefault();
@@ -93,8 +107,13 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                         </div>
                         <div className="panel-editor-campos">
                             <label htmlFor="tipo">Tipo de noticia :</label>
-                            <select name="tipo" id="tipo" className="campo-form">
-                                <option>--Selecione una opción--</option>
+                            <select 
+                                name="tipo" 
+                                id="tipo" 
+                                className="campo-form"
+                                onChange={onChange}
+                            >
+                                <option value="">--Selecione una opción--</option>
                                 <option value="Actualidad">Actualidad</option>
                                 <option value="Deportes">Deportes</option>
                                 <option value="Justicia">Justicia</option>
@@ -143,7 +162,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                             />
                             <Button
                                 className="PanelBuscadorVerNoticia-img-botones z-index-b"
-                                color="#ab003c"
+                                color="inherit"
                                 startIcon={<AddCircleOutlineIcon />}
                             >
                                 Agregar otro párrafo
@@ -152,20 +171,62 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                         <div className="panel-editor-campos">
                             <br/>
                             <label htmlFor="img">Imagen pequeña : (Es oblogatorio que esa 350 x 180)</label>
-                            <input className="campo-form" type="file" name="adjunto" accept=".pdf,.jpg,.png,.jpeg" />
+                            <input 
+                                className="campo-form" 
+                                type="file" 
+                                name="img" 
+                                accept=".pdf,.jpg,.png,.jpeg" 
+                                onChange={onChange}
+                            />
                         </div>
                         <div className="panel-editor-campos">
                             <br/>
                             <label htmlFor="img">Imagen grande : (Es recomendable que sea 1000 x 600)</label>
-                            <input className="campo-form" type="file" name="adjunto" accept=".pdf,.jpg,.png,.jpeg" />
-                            <br/>
+                            <input 
+                                className="campo-form" 
+                                type="file" 
+                                name="imgBig" 
+                                accept=".pdf,.jpg,.png,.jpeg"
+                                onChange={onChange}
+                            />
                             <br/>
                         </div>
+                        <div className="panel-editor-campos">
+                            <label htmlFor="tipo">Video : </label>
+                            <select 
+                                id="tipo" 
+                                onChange={onChangeVideo}
+                                name="siVideo"
+                            >
+                                <option value="false" >No</option>
+                                <option value="true">Si</option>
+                            </select>
+                            <br/>
+                            { (siVideo == "true") ? 
+                            (
+                                <div className="panel-editor-campos">
+                                    <label htmlFor="titulo">Enlace a video de Youtube :</label>
+                                    <input
+                                        className="campo-form"
+                                        type="text"
+                                        id="titulo"
+                                        name="video"
+                                        placeholder="Pegar aquí el enlace del video..."
+                                        onChange={onChange}
+                                    />
+                                    <VistaPreviavideo video={video} />
+                                </div>
+                            )
+                            : null}
+                        </div>
+                        <br/>
+                        <br/>
                         <div className="panel-editor-campos panel-editor-botones">
                             <Button
                                 type="reset"
                                 className="PanelBuscadorVerNoticia-img-botones z-index-b"
-                                color="#ab003c"
+                                color="secondary"
+                                variant="contained"
                                 startIcon={<CancelIcon />}
                                 onClick={ () => {guardarNingunaNoticiaSelecionada(true)}}
                             >
@@ -173,12 +234,14 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                             </Button>
                             <Button
                                 className="PanelBuscadorVerNoticia-img-botones z-index-b"
-                                color="#ab003c"
+                                color="primary"
+                                variant="contained"
                                 startIcon={<SaveIcon />}
                             >
                                 Guadar Cambios
                             </Button>
                         </div>
+                        <br/>
                 </form>
             </div>
         </div>

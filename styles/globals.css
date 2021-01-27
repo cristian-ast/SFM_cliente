@@ -624,6 +624,10 @@ a {
   margin: 10px;
 }
 
+.panel-editor-campos-p-video > select {
+  padding: 5px;
+}
+
 .panel-editor-campos > input, select, textarea {
   margin-top: 8px;
   font-family: 'Roboto', sans-serif;;
@@ -639,5 +643,11 @@ a {
 }
 
 .campo-textarea {
-  height: 150px;
+  height: 120px;
+}
+
+.contenedor-vista-previa-video {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
 }
