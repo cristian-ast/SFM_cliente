@@ -1,18 +1,16 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { BaseDatosContext } from '../context/BaseDatosContext';
 import Button from '@material-ui/core/Button';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import SaveIcon from '@material-ui/icons/Save';
 import CancelIcon from '@material-ui/icons/Cancel';
-import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import VistaPreviavideo from './VistaPreviaVideo';
 
 const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
 
     const { baseDatos } = useContext(BaseDatosContext);
-    
 
-    // State para crear noticia
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
     const [nuevaNoticia, guardarNuevaNoticia] = useState({
         titulo : "",
         url : "",
@@ -21,7 +19,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
         tipo : "",
         img : "",
         imgBig : "",
-        video : "",
+        video : null,
         cuerpo : []
     });
 
@@ -35,19 +33,54 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
         })
     }
 
+    //////////////////////////////////////////////////////////////////////////////////////////////////////
     const [ estadoVideo, guardarEstadoVideo ] = useState({
-        siVideo : false
+        siVideo : false,
+        videoURL : ""
     });
 
     // extraer la Estado del Video
-    const { siVideo } = estadoVideo;
+    const { siVideo, videoURL } = estadoVideo;
 
     const onChangeVideo = e => {
         guardarEstadoVideo({
+            ...estadoVideo,
            [e.target.name] : e.target.value
         })
     }
 
+    // cuando el usuario pone el video como no
+    useEffect(() => {
+        if ( (siVideo == "false") || (siVideo == false) ) {
+            guardarNuevaNoticia({
+                ...nuevaNoticia,
+                video : null
+            })
+            guardarEstadoVideo({
+                ...estadoVideo,
+                videoURL : ""
+            })
+        }
+    }, [siVideo]);
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    const [ cuerpoNoticia, guardarCuerpoNoticia ] = useState({
+        parrafo1: "",
+        parrafo2: "",
+        parrafo3: ""
+    });
+    
+    // extraer el contenido de la noticia
+    const { parrafo1, parrafo2, parrafo3 } = cuerpoNoticia;
+
+    const onChangeCuerpo = e => {
+        guardarCuerpoNoticia({
+            ...cuerpoNoticia,
+            [e.target.name] : e.target.value
+        })
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
     const onSubmit = e => {
         e.preventDefault();
     }
@@ -105,6 +138,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 onChange={onChange}
                             />
                         </div>
+                        
                         <div className="panel-editor-campos">
                             <label htmlFor="tipo">Tipo de noticia :</label>
                             <select 
@@ -122,6 +156,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                             </select>
                             <br/>
                         </div>
+                        <hr/>
                         <div className="panel-editor-campos">
                             <br/>
                             <label><center>Cuerpo de la noticia</center></label>
@@ -136,7 +171,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 id="parrafo1"
                                 name="parrafo1"
                                 placeholder="Escriba un párrafo de la noticia..."
-                                onChange={onChange}
+                                onChange={onChangeCuerpo}
                             />
                         </div>
                         <div className="panel-editor-campos">
@@ -147,7 +182,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 id="parrafo2"
                                 name="parrafo2"
                                 placeholder="Escriba un párrafo de la noticia..."
-                                onChange={onChange}
+                                onChange={onChangeCuerpo}
                             />
                         </div>
                         <div className="panel-editor-campos">
@@ -158,7 +193,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 id="parrafo3"
                                 name="parrafo3"
                                 placeholder="Escriba un párrafo de la noticia..."
-                                onChange={onChange}
+                                onChange={onChangeCuerpo}
                             />
                             <Button
                                 className="PanelBuscadorVerNoticia-img-botones z-index-b"
@@ -168,13 +203,14 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 Agregar otro párrafo
                             </Button>
                         </div>
+                        <hr/>
                         <div className="panel-editor-campos">
                             <br/>
                             <label htmlFor="img">Imagen pequeña : (Es oblogatorio que esa 350 x 180)</label>
                             <input 
                                 className="campo-form" 
                                 type="file" 
-                                name="img" 
+                                name="img"
                                 accept=".pdf,.jpg,.png,.jpeg" 
                                 onChange={onChange}
                             />
@@ -191,12 +227,14 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                             />
                             <br/>
                         </div>
+                        <hr/>
                         <div className="panel-editor-campos">
                             <label htmlFor="tipo">Video : </label>
                             <select 
                                 id="tipo" 
                                 onChange={onChangeVideo}
                                 name="siVideo"
+                                className="siVideo-campo-form"
                             >
                                 <option value="false" >No</option>
                                 <option value="true">Si</option>
@@ -207,20 +245,26 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 <div className="panel-editor-campos">
                                     <label htmlFor="titulo">Enlace a video de Youtube :</label>
                                     <input
-                                        className="campo-form"
+                                        className="campo-form "
                                         type="text"
                                         id="titulo"
-                                        name="video"
+                                        name="videoURL"
                                         placeholder="Pegar aquí el enlace del video..."
-                                        onChange={onChange}
+                                        onChange={onChangeVideo}
                                     />
-                                    <VistaPreviavideo video={video} />
+                                    <p><b>Importante :</b> Antes de guardar la noticia acegúrese que el video cargue correctamente :</p>
+                                    <VistaPreviavideo 
+                                        videoURL={videoURL}
+                                        nuevaNoticia={nuevaNoticia}
+                                        guardarNuevaNoticia={guardarNuevaNoticia}
+                                    />
                                 </div>
                             )
                             : null}
                         </div>
                         <br/>
                         <br/>
+                        <hr/>
                         <div className="panel-editor-campos panel-editor-botones">
                             <Button
                                 type="reset"

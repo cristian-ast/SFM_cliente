@@ -28,12 +28,12 @@ const Panel = () => {
                         <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet" />
 
                         {/*Open Graph / Facebook*/}
-                        <meta property="og:title" content="Somos SFM - Deportes"/>
+                        <meta property="og:title" content="Somos SFM - Panel"/>
                         <meta property="og:description" content="Página de noticias en la ciudad de San Francisco de Macorís, República Domnicana" />
                         <meta property="og:image" content={logo}></meta>
 
                         {/* Twitter */}
-                        <meta property="twitter:title" content="Somos SFM - Deportes"/>
+                        <meta property="twitter:title" content="Somos SFM - Panel"/>
                         <meta property="twitter:description" content="Página de noticias en la ciudad de San Francisco de Macorís, República Domnicana"/>
                         <meta property="twitter:image" content={logo}></meta>
                     </Head>

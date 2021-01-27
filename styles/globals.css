@@ -637,6 +637,11 @@ a {
   margin: 10px;
 }
 
+.siVideo-campo-form {
+  padding: 5px;
+  margin: 5px;
+}
+
 .panel-editor-campos-p-video > select {
   padding: 5px;
 }

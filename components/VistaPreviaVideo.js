@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const VistaPreviavideo = ({video}) => {
+const VistaPreviavideo = ({videoURL, nuevaNoticia, guardarNuevaNoticia}) => {
 
     const ExtraerURLVideo = (link) => {
 
@@ -18,7 +18,6 @@ const VistaPreviavideo = ({video}) => {
                     if ((link.charAt(indice)) != "&" ) {
                         URL += link.charAt(indice);
                     } else {
-                        console.log(URL);
                         return URL;
                     }
                     indice++;
@@ -56,13 +55,21 @@ const VistaPreviavideo = ({video}) => {
         return URL;
     }
 
-    const miniURL = ExtraerURLVideo(video);
+    const miniURL = ExtraerURLVideo(videoURL);
 
-    const link = `https://www.youtube.com/embed/${miniURL}`;
+    const video = `https://www.youtube.com/embed/${miniURL}`;
+
+    useEffect(() => {
+        guardarNuevaNoticia({
+            ...nuevaNoticia,
+            video : video
+        })
+
+    }, [videoURL, video]);
 
     return (
         <div className="contenedor-vista-previa-video">
-            <iframe width="380" height="220" src={link} frameborder="0" ></iframe>
+            <iframe width="380" height="220" src={video} frameborder="0" ></iframe>
         </div>
     );
 }
