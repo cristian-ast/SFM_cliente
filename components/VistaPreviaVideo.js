@@ -58,7 +58,7 @@ const VistaPreviavideo = ({video}) => {
 
     const miniURL = ExtraerURLVideo(video);
 
-    const link = `https://www.youtube.com/embed/${miniURL}`
+    const link = `https://www.youtube.com/embed/${miniURL}`;
 
     return (
         <div className="contenedor-vista-previa-video">

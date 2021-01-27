@@ -31,8 +31,6 @@ const PageNoticia = ({datos}) => {
         }
     }
 
-    console.log(datos.imgBig);
-
     return (
         <BaseDatosProvider>
             <AnunciosProvider>
@@ -56,8 +54,16 @@ const PageNoticia = ({datos}) => {
                             </Head>
 
                             <div className="cuerpo--noticias--cabecera">
-                                <img className="cuerpo--noticias--imagen" src={datos.imgBig} alt="imagen" />
-
+                                {datos.video == null 
+                                ?
+                                  (
+                                    <img className="cuerpo--noticias--imagen" src={datos.imgBig} alt="imagen" />
+                                  )
+                                :
+                                  (
+                                    <iframe className="cuerpo--noticias--video" src={datos.video} frameborder="0" ></iframe>
+                                  )
+                                }
                                 <div className="cuerpo--noticias--titulo__fecha">
                                     <h1 className="cuerpo--noticias--titulo">{datos.titulo}</h1>
                                     <p className="cuerpo--noticias--fecha">{datos.tipo} {'>>'} {datos.fecha}</p>
@@ -100,6 +106,19 @@ PageNoticia.getInitialProps = (ctx) => {
           //     ""
           //   ]
           // },
+          {
+            titulo : "Siguen los disturbios en Países Bajos",
+            url : "Siguen-los-disturbios-en-Paises-Bajos",
+            fecha : "26 ene 2021",
+            autor : "Victor Manuel",
+            tipo : "Actualidad",
+            img : "https://i.ytimg.com/vi/5_8yDmK9CTM/maxresdefault.jpg",
+            imgBig : "https://i.ytimg.com/vi/5_8yDmK9CTM/maxresdefault.jpg",
+            video : "https://www.youtube.com/embed/5_8yDmK9CTM",
+            cuerpo : [
+              "Decenas de personas vuelven a enfrentarse con la policía y a armar barricadas en las calles de ciudades como Ámsterdam y Rotterdam. Muchos holandeses están cansados de las restricciones para contener la pandemia, otros critican a los manifestantes y culpan a grupos de vándalos de los desmanes y los saqueos."
+            ]
+          },
           {
             titulo : "Hallan mujer italiana muerta dentro de una nevera en Punta Cana",
             url : "Hallan-mujer-italiana-muerta-dentro-de-una-nevera-en-Punta-Cana",
