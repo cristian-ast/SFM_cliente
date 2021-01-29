@@ -39,7 +39,7 @@ const Panel = () => {
                     </Head>
                     <div className="inicio">
                         <div className="panel-contenedor">
-                            <PanelBuscador/>
+                            {/* <PanelBuscador/> */}
 
                             <div className="contenedor-panel-editor">
                                 {ningunaNoticiaSelecionada ? 

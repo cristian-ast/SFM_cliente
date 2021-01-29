@@ -1,10 +1,10 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { BaseDatosContext } from '../context/BaseDatosContext';
 import Button from '@material-ui/core/Button';
-import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import SaveIcon from '@material-ui/icons/Save';
 import CancelIcon from '@material-ui/icons/Cancel';
 import VistaPreviavideo from './VistaPreviaVideo';
+import CuerpoNoticia from './CuerpoNoticia';
 
 const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
 
@@ -20,11 +20,12 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
         img : "",
         imgBig : "",
         video : null,
-        cuerpo : []
+        cuerpo : [
+            "",
+            "",
+            ""
+        ]
     });
-
-    // extraer la noticia
-    const { titulo, url, fecha, autor, tipo, img, imgBig, video, cuerpo } = nuevaNoticia;
 
     const onChange = e => {
         guardarNuevaNoticia({
@@ -64,14 +65,21 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
     }, [siVideo]);
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////
-    const [ cuerpoNoticia, guardarCuerpoNoticia ] = useState({
-        parrafo1: "",
-        parrafo2: "",
-        parrafo3: ""
-    });
     
-    // extraer el contenido de la noticia
-    const { parrafo1, parrafo2, parrafo3 } = cuerpoNoticia;
+    const [ cuerpoNoticia, guardarCuerpoNoticia ] = useState({
+        p1: "",
+        p2: "",
+        p3: "",
+        p4: "",
+        p5: "",
+        p6: "",
+        p7: "",
+        p8: "",
+        p9: "",
+        p10: "",
+        p11: "",
+        p12: ""
+    });
 
     const onChangeCuerpo = e => {
         guardarCuerpoNoticia({
@@ -79,6 +87,33 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
             [e.target.name] : e.target.value
         })
     }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    const [nCuerpo, GuaedarNCuerpo]  = useState({
+        canParr: 3
+    });
+
+    const onChangeCanParr = e => {
+        GuaedarNCuerpo({
+            [e.target.name] : e.target.value
+        });
+    }
+
+    // extraer el numero de parrafos
+    const { canParr } = nCuerpo;
+
+    useEffect( () => {
+        let pn = "";
+
+        for ( let contador = parseInt(canParr) + 1 ; contador <= 12 ; contador++) {
+            pn = `p${contador}`;
+            guardarCuerpoNoticia({
+                ...cuerpoNoticia,
+                [pn] : ""
+            }) 
+            console.log(pn);
+        }
+    }, [nCuerpo]);
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     const onSubmit = e => {
@@ -162,47 +197,34 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                             <label><center>Cuerpo de la noticia</center></label>
                             <br/>
                         </div>
-                        
+
                         <div className="panel-editor-campos">
-                            <label htmlFor="parrafo1">Párrafo 1 :</label>
-                            <textarea 
-                                className="campo-form campo-textarea"
-                                type="text"
-                                id="parrafo1"
-                                name="parrafo1"
-                                placeholder="Escriba un párrafo de la noticia..."
-                                onChange={onChangeCuerpo}
-                            />
-                        </div>
-                        <div className="panel-editor-campos">
-                            <label htmlFor="parrafo1">Párrafo 2 :</label>
-                            <textarea 
-                                className="campo-form campo-textarea"
-                                type="text"
-                                id="parrafo2"
-                                name="parrafo2"
-                                placeholder="Escriba un párrafo de la noticia..."
-                                onChange={onChangeCuerpo}
-                            />
-                        </div>
-                        <div className="panel-editor-campos">
-                            <label htmlFor="parrafo3">Párrafo 3 :</label>
-                            <textarea 
-                                className="campo-form campo-textarea"
-                                type="text"
-                                id="parrafo3"
-                                name="parrafo3"
-                                placeholder="Escriba un párrafo de la noticia..."
-                                onChange={onChangeCuerpo}
-                            />
-                            <Button
-                                className="PanelBuscadorVerNoticia-img-botones z-index-b"
-                                color="inherit"
-                                startIcon={<AddCircleOutlineIcon />}
+                            <label htmlFor="canParr">Cantidad de Párrafos :</label>
+                            <select 
+                                name="canParr" 
+                                id="canParr" 
+                                className="siVideo-campo-form"
+                                onChange={onChangeCanParr}
                             >
-                                Agregar otro párrafo
-                            </Button>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <br/>
                         </div>
+
+                        <CuerpoNoticia
+                            onChangeCuerpo={onChangeCuerpo}
+                            nCuerpo={nCuerpo.canParr}
+                        />
+                        
                         <hr/>
                         <div className="panel-editor-campos">
                             <br/>
@@ -271,6 +293,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 className="PanelBuscadorVerNoticia-img-botones z-index-b"
                                 color="secondary"
                                 variant="contained"
+                                size="small"
                                 startIcon={<CancelIcon />}
                                 onClick={ () => {guardarNingunaNoticiaSelecionada(true)}}
                             >
@@ -280,6 +303,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 className="PanelBuscadorVerNoticia-img-botones z-index-b"
                                 color="primary"
                                 variant="contained"
+                                size="small"
                                 startIcon={<SaveIcon />}
                             >
                                 Guadar Cambios
