@@ -31,6 +31,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
         guardarNuevaNoticia({
             ...nuevaNoticia,
             [e.target.name] : e.target.value
+
         })
     }
 
@@ -103,19 +104,51 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
     const { canParr } = nCuerpo;
 
     useEffect( () => {
-        let pn = "";
+        let newCuerpo = {};
+        
+        //copiar el cuerpo
+        newCuerpo = cuerpoNoticia;
 
+        // borrar los campos vacios
         for ( let contador = parseInt(canParr) + 1 ; contador <= 12 ; contador++) {
-            pn = `p${contador}`;
-            guardarCuerpoNoticia({
-                ...cuerpoNoticia,
+            let pn = `p${contador}`;
+        
+            newCuerpo = {
+                ...newCuerpo,
                 [pn] : ""
-            }) 
-            console.log(pn);
+            };
         }
+        guardarCuerpoNoticia(newCuerpo);
+
     }, [nCuerpo]);
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    // este pedazo de codigo no funciona aún
+    useEffect( () => {
+        const listaParrafos = [];
+
+        listaParrafos[0] = cuerpoNoticia.p1;
+        listaParrafos[1] = cuerpoNoticia.p2;
+        listaParrafos[2] = cuerpoNoticia.p3;
+        listaParrafos[3] = cuerpoNoticia.p4;
+        listaParrafos[4] = cuerpoNoticia.p5;
+        listaParrafos[5] = cuerpoNoticia.p6;
+        listaParrafos[6] = cuerpoNoticia.p7;
+        listaParrafos[7] = cuerpoNoticia.p8;
+        listaParrafos[8] = cuerpoNoticia.p9;
+        listaParrafos[9] = cuerpoNoticia.p10;
+        listaParrafos[10] = cuerpoNoticia.p11;
+        listaParrafos[11] = cuerpoNoticia.p12;
+
+        guardarNuevaNoticia({
+            ...nuevaNoticia,
+            cuerpo : listaParrafos
+        });
+
+        console.log("Desde guardar Nueva noticia");
+
+    }, [cuerpoNoticia]);
+    //////////////////////////////////////////////////////////////////////////////////////////
+    
     const onSubmit = e => {
         e.preventDefault();
     }
@@ -131,7 +164,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                         <div className="panel-editor-campos">
                             <label htmlFor="titulo">Título :</label>
                             <input
-                                className="campo-form"
+                                className="campo-form campo-form-with-100"
                                 type="text"
                                 id="titulo"
                                 name="titulo"
@@ -143,7 +176,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                             <label htmlFor="url">URL : </label>
                             <p>(No poner acentos. No usar la Ñ. No usar espacios. Dividir las parabras con: "-". No usar caracteres raros. Por favor, mirar el ejemplo)</p>
                             <input
-                                className="campo-form"
+                                className="campo-form campo-form-with-100"
                                 type="text"
                                 id="url"
                                 name="url"
@@ -154,7 +187,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                         <div className="panel-editor-campos">
                             <label htmlFor="fecha">Fecha :</label>
                             <input
-                                className="campo-form"
+                                className="campo-form campo-form-with-100"
                                 type="text"
                                 id="fecha"
                                 name="fecha"
@@ -165,7 +198,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                         <div className="panel-editor-campos">
                             <label htmlFor="autor">Autor :</label>
                             <input
-                                className="campo-form"
+                                className="campo-form campo-form-with-100"
                                 type="text"
                                 id="autor"
                                 name="autor"
@@ -179,7 +212,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                             <select 
                                 name="tipo" 
                                 id="tipo" 
-                                className="campo-form"
+                                className="campo-form campo-form-with-100"
                                 onChange={onChange}
                             >
                                 <option value="">--Selecione una opción--</option>
@@ -264,10 +297,10 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                             <br/>
                             { (siVideo == "true") ? 
                             (
-                                <div className="panel-editor-campos">
+                                <div className="panel-editor-campos ">
                                     <label htmlFor="titulo">Enlace a video de Youtube :</label>
                                     <input
-                                        className="campo-form "
+                                        className="campo-form campo-form-with-100"
                                         type="text"
                                         id="titulo"
                                         name="videoURL"
