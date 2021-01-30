@@ -170,6 +170,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 name="titulo"
                                 placeholder="Escriba el título de la noticia..."
                                 onChange={onChange}
+                                required
                             />
                         </div>
                         <div className="panel-editor-campos">
@@ -182,6 +183,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 name="url"
                                 placeholder="Escriba la URL Ej: Accidente-de-Auto-en-Carretera"
                                 onChange={onChange}
+                                required
                             />
                         </div>
                         <div className="panel-editor-campos">
@@ -193,6 +195,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 name="fecha"
                                 placeholder="Escriba la fecha..."
                                 onChange={onChange}
+                                required
                             />
                         </div>
                         <div className="panel-editor-campos">
@@ -204,6 +207,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 name="autor"
                                 placeholder="Escriba el autor..."
                                 onChange={onChange}
+                                required
                             />
                         </div>
                         
@@ -214,6 +218,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 id="tipo" 
                                 className="campo-form campo-form-with-100"
                                 onChange={onChange}
+                                required
                             >
                                 <option value="">--Selecione una opción--</option>
                                 <option value="Actualidad">Actualidad</option>
@@ -268,6 +273,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 name="img"
                                 accept=".pdf,.jpg,.png,.jpeg" 
                                 onChange={onChange}
+                                required
                             />
                         </div>
                         <div className="panel-editor-campos">
@@ -279,6 +285,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 name="imgBig" 
                                 accept=".pdf,.jpg,.png,.jpeg"
                                 onChange={onChange}
+                                required
                             />
                             <br/>
                         </div>
@@ -306,6 +313,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                         name="videoURL"
                                         placeholder="Pegar aquí el enlace del video..."
                                         onChange={onChangeVideo}
+                                        required
                                     />
                                     <p><b>Importante :</b> Antes de guardar la noticia acegúrese que el video cargue correctamente :</p>
                                     <VistaPreviavideo 
@@ -333,6 +341,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 Cancelar
                             </Button>
                             <Button
+                                type="submit"
                                 className="PanelBuscadorVerNoticia-img-botones z-index-b"
                                 color="primary"
                                 variant="contained"

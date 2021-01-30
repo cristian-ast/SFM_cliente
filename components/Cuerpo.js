@@ -13,6 +13,7 @@ const Cuerpo = ({onChangeCuerpo, n}) => {
                 name={despParrafo}
                 placeholder="Escriba un párrafo de la noticia..."
                 onChange={onChangeCuerpo}
+                required
             />
         </div>
     );
