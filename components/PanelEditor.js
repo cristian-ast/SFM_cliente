@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { BaseDatosContext } from '../context/BaseDatosContext';
+import Spinner from './Spinner';
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
 import CancelIcon from '@material-ui/icons/Cancel';
@@ -53,6 +54,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
 
     // cuando el usuario pone el video como no
     useEffect(() => {
+        CambiaMostraSpinnerEnVideo();
         if ( (siVideo == "false") || (siVideo == false) ) {
             guardarNuevaNoticia({
                 ...nuevaNoticia,
@@ -95,6 +97,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
     });
 
     const onChangeCanParr = e => {
+        CambiaMostraSpinnerEnCuerpoNoticia();
         GuaedarNCuerpo({
             [e.target.name] : e.target.value
         });
@@ -144,9 +147,31 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
             cuerpo : listaParrafos
         });
 
-        console.log("Desde guardar Nueva noticia");
-
     }, [cuerpoNoticia]);
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+    const  [mostraSpinnerEnCuerpoNoticia, GmostraSpinnerEnCuerpoNoticia ] = useState(false);
+
+    const CambiaMostraSpinnerEnCuerpoNoticia = () => {
+        GmostraSpinnerEnCuerpoNoticia(true);
+        setTimeout(volverAFalso, 800);
+    }
+
+    const volverAFalso = () => {
+        GmostraSpinnerEnCuerpoNoticia(false);
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////
+    const  [mostraSpinnerEnVideo, GmostraSpinnerEnVideo ] = useState(false);
+
+    const CambiaMostraSpinnerEnVideo = () => {
+       GmostraSpinnerEnVideo(true);
+       setTimeout(volverAFalsoVideo, 800);
+    }
+
+    const volverAFalsoVideo = () => {
+       GmostraSpinnerEnVideo(false);
+    }
     //////////////////////////////////////////////////////////////////////////////////////////
     
     const onSubmit = e => {
@@ -155,7 +180,6 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
 
     return (
         <div className="editor-noticias" >
-
             <div className="contenedor-editor">
                 <center><h3>Crear Nueva Noticia</h3></center>
                 <form
@@ -237,6 +261,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                         </div>
 
                         <div className="panel-editor-campos">
+                            
                             <label htmlFor="canParr">Cantidad de Párrafos :</label>
                             <select 
                                 name="canParr" 
@@ -257,6 +282,13 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                             </select>
                             <br/>
                         </div>
+                        { mostraSpinnerEnCuerpoNoticia ? 
+                            (
+                                <div className="contenedorSpinner">
+                                    <Spinner/>
+                                </div>
+                            )
+                        : null}
 
                         <CuerpoNoticia
                             onChangeCuerpo={onChangeCuerpo}
@@ -302,6 +334,11 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 <option value="true">Si</option>
                             </select>
                             <br/>
+                            {mostraSpinnerEnVideo ? (
+                                <div className="contenedorSpinner">
+                                    <Spinner/>
+                                </div>
+                            ) : (<div>
                             { (siVideo == "true") ? 
                             (
                                 <div className="panel-editor-campos ">
@@ -323,7 +360,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                     />
                                 </div>
                             )
-                            : null}
+                            : null} </div>)}
                         </div>
                         <br/>
                         <br/>
