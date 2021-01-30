@@ -19,7 +19,6 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
         autor : "",
         tipo : "",
         img : "",
-        imgBig : "",
         video : null,
         cuerpo : [
             "",
@@ -256,6 +255,20 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                         <hr/>
                         <div className="panel-editor-campos">
                             <br/>
+                            <label htmlFor="img">Imagen : <span style={{ fontWeight: 350}}>(Es recomendable que sea 1000 x 514)</span></label>
+                            <input 
+                                className="campo-form" 
+                                type="file" 
+                                name="img" 
+                                accept=".pdf,.jpg,.png,.jpeg"
+                                onChange={onChange}
+                                required
+                            />
+                            <br/>
+                        </div>
+                        <hr/>
+                        <div className="panel-editor-campos">
+                            <br/>
                             <label><center>Cuerpo de la noticia</center></label>
                             <br/>
                         </div>
@@ -295,32 +308,6 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                             nCuerpo={nCuerpo.canParr}
                         />
                         
-                        <hr/>
-                        <div className="panel-editor-campos">
-                            <br/>
-                            <label htmlFor="img">Imagen pequeña : (Es oblogatorio que esa 350 x 180)</label>
-                            <input 
-                                className="campo-form" 
-                                type="file" 
-                                name="img"
-                                accept=".pdf,.jpg,.png,.jpeg" 
-                                onChange={onChange}
-                                required
-                            />
-                        </div>
-                        <div className="panel-editor-campos">
-                            <br/>
-                            <label htmlFor="img">Imagen grande : (Es recomendable que sea 1000 x 600)</label>
-                            <input 
-                                className="campo-form" 
-                                type="file" 
-                                name="imgBig" 
-                                accept=".pdf,.jpg,.png,.jpeg"
-                                onChange={onChange}
-                                required
-                            />
-                            <br/>
-                        </div>
                         <hr/>
                         <div className="panel-editor-campos">
                             <label htmlFor="tipo">Video : </label>
