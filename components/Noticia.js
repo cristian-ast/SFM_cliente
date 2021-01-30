@@ -8,7 +8,7 @@ const Noticia = ({titulo, img, url}) => {
     return (
         <Link href={"/noticias" + url}>
             <div 
-                style={{ backgroundImage: `url(${img})`}}
+                style={{ backgroundImage: `url(${img})`, backgroundSize: "contain"}}
                 className="noticia--indivudual" 
             >
                 <div className="titulo--noticia">

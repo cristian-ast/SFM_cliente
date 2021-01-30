@@ -33,7 +33,6 @@ const BaseDatosProvider = (props) => {
               autor : "Victor Manuel",
               tipo : "Actualidad",
               img : "https://i.ytimg.com/vi/5_8yDmK9CTM/maxresdefault.jpg",
-              imgBig : "https://i.ytimg.com/vi/5_8yDmK9CTM/maxresdefault.jpg",
               video : "https://www.youtube.com/embed/5_8yDmK9CTM",
               cuerpo : [
                 "Decenas de personas vuelven a enfrentarse con la policía y a armar barricadas en las calles de ciudades como Ámsterdam y Rotterdam. Muchos holandeses están cansados de las restricciones para contener la pandemia, otros critican a los manifestantes y culpan a grupos de vándalos de los desmanes y los saqueos."
@@ -45,8 +44,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 22, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "https://festive-fermat-68fe12.netlify.app/static/media/Unamujerdenacionalidaditalianafuehalladamuerta.9aca90e0.png",
-              imgBig : "https://festive-fermat-68fe12.netlify.app/static/media/UnamujerdenacionalidaditalianafuehalladamuertaM.f73ed20e.png",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/UnamujerdenacionalidaditalianafuehalladamuertaM.f73ed20e.png",
               video : null,
               cuerpo : [
                 "Una mujer de nacionalidad italiana fue hallada muerta dentro de un refrigerador en su vivienda  en un residencial de Bávaro.",
@@ -63,8 +61,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 22, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "https://festive-fermat-68fe12.netlify.app/static/media/PNyERDdesmantelangalleraclandestina.a5f46c3d.jpeg",
-              imgBig : "https://festive-fermat-68fe12.netlify.app/static/media/PNyERDdesmantelangalleraclandestinaM.f980fc5c.jpeg",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/PNyERDdesmantelangalleraclandestinaM.f980fc5c.jpeg",
               video : null,
               cuerpo : [
                 "PN y ERD desmantelan gallera clandestina en Los Miches de Dajabón; ocupan motocicletas y otras evidencias. ",
@@ -79,8 +76,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 21, 2021",
               autor : "Victor Manuel",
               tipo : "Actualidad",
-              img : "https://festive-fermat-68fe12.netlify.app/static/media/Unincendioseregistr%C3%B3lama%C3%B1ana.acdac2d8.jpg",
-              imgBig : "https://festive-fermat-68fe12.netlify.app/static/media/Unincendioseregistr%C3%B3lama%C3%B1anaM.ffe67b4e.jpg",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/Unincendioseregistr%C3%B3lama%C3%B1anaM.ffe67b4e.jpg",
               video : null,
               cuerpo : [
                 "Un incendio se registró la mañana de este jueves en la compañía india de biotecnología y productos farmacéuticos, Serum Institute of India, el mayor fabricante de vacunas del mundo, según imágenes mostradas en la televisión local.",
@@ -94,8 +90,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 17, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "http://condescending-borg-7b7585.netlify.app/static/media/Aclaradesconocidosusurpan.552fd220.jpg",
-              imgBig : "http://condescending-borg-7b7585.netlify.app/static/media/AclaradesconocidosusurpanM.e09a4b5e.jpg",
+              img : "http://condescending-borg-7b7585.netlify.app/static/media/AclaradesconocidosusurpanM.e09a4b5e.jpg",
               video : null,
               cuerpo : [
                 "A través del DICAT realiza investigación para identificar las cuentas de redes sociales y números telefónicos utilizados para ese tipo de delito.",
@@ -113,8 +108,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 17, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "http://condescending-borg-7b7585.netlify.app/static/media/Detienenaramonantonio.9b795830.jpg",
-              imgBig : "http://condescending-borg-7b7585.netlify.app/static/media/DetienenaramonantonioM.1918aea1.jpg",
+              img : "http://condescending-borg-7b7585.netlify.app/static/media/DetienenaramonantonioM.1918aea1.jpg",
               video : null,
               cuerpo : [
                 "Miches - Detienen a ramon antonio simó alias mantonio por agredir a palos a la señora yanaira severino mientras esta buscaba a su hijo que se encotraba en una pelea con el hijo de este. ",
@@ -129,8 +123,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 16, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "http://condescending-borg-7b7585.netlify.app/static/media/Recuerdaquehoyapartirdelmediod%C3%ADa.2c7b6e8f.jpg",
-              imgBig : "http://condescending-borg-7b7585.netlify.app/static/media/Recuerdaquehoyapartirdelmediod%C3%ADaM.2bb3a4d5.jpg",
+              img : "http://condescending-borg-7b7585.netlify.app/static/media/Recuerdaquehoyapartirdelmediod%C3%ADaM.2bb3a4d5.jpg",
               video : null,
               cuerpo : [
                 "No te dejes sorprender, recuerda que el horario del toque de queda por la vida de este sábado 16 y mañana domingo 17, inicia a las 12:00 del mediodía, con libre tránsito hasta las 3:00 de la tarde.",
@@ -144,8 +137,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 15, 2021",
               autor : "Victor Manuel",
               tipo : "Actualidad",
-              img : "http://condescending-borg-7b7585.netlify.app/static/media/SenadorH%C3%A9ctorAcostapidelibretr%C3%A1nsito.fe344a4d.jpg",
-              imgBig : "http://condescending-borg-7b7585.netlify.app/static/media/SenadorH%C3%A9ctorAcostapidelibretr%C3%A1nsitoM.61d28dd5.jpg",
+              img : "http://condescending-borg-7b7585.netlify.app/static/media/SenadorH%C3%A9ctorAcostapidelibretr%C3%A1nsitoM.61d28dd5.jpg",
               video : null,
               cuerpo : [
                 "A la queja por el toque de queda que se aplica en el país se sumó hoy el senador de la provincia Monseñor Noel, quien consideró es mejor   permitir el libre tránsito siempre que se eviten las aglomeraciones.",
@@ -164,8 +156,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 15, 2021",
               autor : "Victor Manuel",
               tipo : "Actualidad",
-              img : "http://condescending-borg-7b7585.netlify.app/static/media/JovenoriundaendeSanto.09723398.jpg",
-              imgBig : "http://condescending-borg-7b7585.netlify.app/static/media/JovenoriundaendeSantoM.7cb7a2e6.jpg",
+              img : "http://condescending-borg-7b7585.netlify.app/static/media/JovenoriundaendeSantoM.7cb7a2e6.jpg",
               video : null,
               cuerpo : [
                 "Una joven oriunda en de Santo Domingo y quien por mucho tiempo laboró en algunos centros de diversiones de la ciudad de La Romana,  perdió la vida de manera inesperadamente y en plena juventud.",
@@ -181,8 +172,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 14, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "http://condescending-borg-7b7585.netlify.app/static/media/Uncontingentepolicialdetienea.79956f1f.jpg",
-              imgBig : "http://condescending-borg-7b7585.netlify.app/static/media/UncontingentepolicialdetieneaM.8af570e5.jpg",
+              img : "http://condescending-borg-7b7585.netlify.app/static/media/UncontingentepolicialdetieneaM.8af570e5.jpg",
               video : null,
               cuerpo : [
                 "Testigos califican como abuso"
@@ -194,8 +184,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 11, 2021",
               autor : "Victor Manuel",
               tipo : "Farándula",
-              img : "http://condescending-borg-7b7585.netlify.app/static/media/Echan-a-Bruce-Willis-de-una-farmacia.e7ba1fe3.jpg",
-              imgBig : "http://condescending-borg-7b7585.netlify.app/static/media/Echan-a-Bruce-Willis-de-una-farmaciaM.7be10aeb.jpg",
+              img : "http://condescending-borg-7b7585.netlify.app/static/media/Echan-a-Bruce-Willis-de-una-farmaciaM.7be10aeb.jpg",
               video : null,
               cuerpo : [
                 "LUEGO QUE ESTA SITUACIÓN SE HICIERA TENDENCIA, EL ARTISTA DECIDIÓ",
@@ -207,8 +196,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 11, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "http://condescending-borg-7b7585.netlify.app/static/media/M%C3%A1sRD$92millones.0e115e64.jpeg",
-              imgBig : "http://condescending-borg-7b7585.netlify.app/static/media/M%C3%A1sRD$92millonesM.7cc66ffe.jpeg",
+              img : "http://condescending-borg-7b7585.netlify.app/static/media/M%C3%A1sRD$92millonesM.7cc66ffe.jpeg",
               video : null,
               cuerpo : [
                 "El Ministerio Público informó este lunes que  han cobrado un total RD$92.7 millones por sanciones a personas y negocios, que violentan las disposiciones sanitarias para mitigar los contagios del Covid-19 en el país.",
@@ -233,8 +221,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 11, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "https://condescending-borg-7b7585.netlify.app/static/media/PNarrestaa1225personas.0217f66f.jpeg",
-              imgBig : "https://condescending-borg-7b7585.netlify.app/static/media/PNarrestaa1225personasM.1229c667.jpeg",
+              img : "https://condescending-borg-7b7585.netlify.app/static/media/PNarrestaa1225personasM.1229c667.jpeg",
               video : null,
               cuerpo : [
                 "La Policía Nacional informó este lunes que en la jornada de ayer domingo arrestó a 1,225 persona por violar el toque de queda impuesto por el Gobierno para mitigar los contagios de COVID-19.",
@@ -250,8 +237,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 10, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "https://condescending-borg-7b7585.netlify.app/static/media/Ministropideaagentes.d430c0bb.jpeg",
-              imgBig : "https://condescending-borg-7b7585.netlify.app/static/media/MinistropideaagentesM.a99025d0.jpeg",
+              img : "https://condescending-borg-7b7585.netlify.app/static/media/MinistropideaagentesM.a99025d0.jpeg",
               video : null,
               cuerpo : [
                 "Jesús Vásquez Martínez, ministro de Interior y Policía. El ministro de Interior y Policía, Jesús Vásquez (Chú), exhortó la tarde de este domingo a los agentes que participan en labores de patrullaje durante el toque de queda a “no cometer atropellos contra las personas” al momento de su detención.",
@@ -269,8 +255,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 10, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "https://condescending-borg-7b7585.netlify.app/static/media/allanamiento.46d48ba3.jpeg",
-              imgBig : "https://condescending-borg-7b7585.netlify.app/static/media/allanamientoM.8b09b041.jpeg",
+              img : "https://condescending-borg-7b7585.netlify.app/static/media/allanamientoM.8b09b041.jpeg",
               video : null,
               cuerpo : [
                 "Fue allanada durante 9 horas la residencia del ex administrador de la Empresa Distribuidora de Electricidad del Norte (Edenorte), Julio César Correa Mena, en el residencial Don Bartolo, en La Vega.",
@@ -286,8 +271,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 10, 2021",
               autor : "Victor Manuel",
               tipo : "Actualidad",
-              img : "https://condescending-borg-7b7585.netlify.app/static/media/viajeafrontera.c317e9d0.jpeg",
-              imgBig : "https://condescending-borg-7b7585.netlify.app/static/media/viajeafronteraM.dd16c12b.jpeg",
+              img : "https://condescending-borg-7b7585.netlify.app/static/media/viajeafronteraM.dd16c12b.jpeg",
               video : null,
               cuerpo : [
                 "El presidente Luis Abinader viaja este domingo a la provincia de Elias Piña, donde realizará un recorrido por la zona fronteriza.",
@@ -302,8 +286,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 9, 2021",
               autor : "Victor Manuel",
               tipo : "Economía",
-              img : "https://condescending-borg-7b7585.netlify.app/static/media/Asociacion-de-Bares-de.3c629f17.jpeg",
-              imgBig : "https://condescending-borg-7b7585.netlify.app/static/media/Asociacion-de-Bares-deM.b10f8069.jpeg",
+              img : "https://condescending-borg-7b7585.netlify.app/static/media/Asociacion-de-Bares-deM.b10f8069.jpeg",
               video : null,
               cuerpo : [
                 "La Asociación de Bares de la Zona Colonial convocó este sábado a un cacerolazo en el Distrito Nacional, en busca de protesta contra el Gobierno por las medidas establecidas como prevención de contagio al coronavirus.",
@@ -318,8 +301,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 6, 2021",
               autor : "Victor Manuel",
               tipo : "Actualidad",
-              img : "https://condescending-borg-7b7585.netlify.app/static/media/onametadvierteque.defe7b7f.jpg",
-              imgBig : "https://condescending-borg-7b7585.netlify.app/static/media/onametadviertequeM.d90e0bab.jpeg",
+              img : "https://condescending-borg-7b7585.netlify.app/static/media/onametadviertequeM.d90e0bab.jpeg",
               video : null,
               cuerpo : [
                 "La Oficina Nacional de Meteorología (Onamet) pronosticó que para este miércoles las condiciones del tiempo no experimentarán cambios significativos en gran parte del territorio nacional.",
@@ -334,8 +316,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 5, 2021",
               autor : "Victor Manuel",
               tipo : "Actualidad",
-              img : "https://condescending-borg-7b7585.netlify.app/static/media/gobiernocedeypermite.fa51fded.jpg",
-              imgBig : "https://condescending-borg-7b7585.netlify.app/static/media/gobiernocedeypermiteM.b749c4cd.jpeg",
+              img : "https://condescending-borg-7b7585.netlify.app/static/media/gobiernocedeypermiteM.b749c4cd.jpeg",
               video : null,
               cuerpo : [
                 "El Gobierno anunció este martes que nueva vez se permite la apertura y la celebración de las actividades de las diferentes iglesias o denominaciones religiosas de todo tipo.",
