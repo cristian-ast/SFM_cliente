@@ -668,16 +668,16 @@ a {
 .campo-form-with-100 {
   width: 100%;
   border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 5px 5px 11px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 11px -8px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 11px -8px rgba(0,0,0,0.75);
 }
 
 .siVideo-campo-form {
   padding: 5px;
   margin: 5px;
   border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 5px 5px 11px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 11px -8px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 11px -8px rgba(0,0,0,0.75);
 }
