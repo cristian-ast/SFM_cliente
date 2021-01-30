@@ -705,6 +705,10 @@ a {
   margin: 10px;
 }
 
+.panel-editor-campos-imagen {
+  width: 100%;
+}
+
 .panel-editor-campos-p-video > select {
   padding: 5px;
 }

@@ -7,6 +7,8 @@ import CancelIcon from '@material-ui/icons/Cancel';
 import VistaPreviavideo from './VistaPreviaVideo';
 import CuerpoNoticia from './CuerpoNoticia';
 
+import SinImagen from '../images/SinImagen.jpg';
+
 const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
 
     const { baseDatos } = useContext(BaseDatosContext);
@@ -264,6 +266,7 @@ const PanelEditor = ({guardarNingunaNoticiaSelecionada}) => {
                                 onChange={onChange}
                                 required
                             />
+                            <img className="panel-editor-campos-imagen" src={SinImagen} alt="Imagen de la noticia" />
                             <br/>
                         </div>
                         <hr/>
