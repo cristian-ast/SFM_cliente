@@ -668,6 +668,7 @@ a {
 .campo-form-with-100 {
   width: 100%;
   border-radius: 10px;
+  border: none;
   -webkit-box-shadow: 5px 5px 11px -8px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px 5px 11px -8px rgba(0,0,0,0.75);
   box-shadow: 5px 5px 11px -8px rgba(0,0,0,0.75);
@@ -676,6 +677,7 @@ a {
 .siVideo-campo-form {
   padding: 5px;
   margin: 5px;
+  border: none;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 11px -8px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px 5px 11px -8px rgba(0,0,0,0.75);
