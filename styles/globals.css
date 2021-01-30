@@ -1,6 +1,5 @@
 html,
 body {
-  background-color: #f6f5f5;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -638,11 +637,6 @@ a {
   margin: 10px;
 }
 
-.siVideo-campo-form {
-  padding: 5px;
-  margin: 5px;
-}
-
 .panel-editor-campos-p-video > select {
   padding: 5px;
 }
@@ -673,4 +667,17 @@ a {
 
 .campo-form-with-100 {
   width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+}
+
+.siVideo-campo-form {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
 }
