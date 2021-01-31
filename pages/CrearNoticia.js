@@ -6,7 +6,7 @@ import Container from '../components/Container';
 import PanelEditor from '../components/PanelEditor';
 import logo from '../images/portada.jpg';
 
-const Deportes = () => {
+const CrearNoticia = () => {
 
     const [ ningunaNoticiaSelecionada, guardarNingunaNoticiaSelecionada ] = useState(true);
 
@@ -49,4 +49,4 @@ const Deportes = () => {
     );
 }
 
-export default Deportes;
+export default CrearNoticia;

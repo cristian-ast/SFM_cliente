@@ -6,7 +6,7 @@ import ContenedorMenu from '../components/ContenedorMenu';
 
 import logo from '../images/portada.jpg';
 
-const Panel = () => {
+const Menu = () => {
 
     return (
         <BaseDatosProvider>
@@ -45,4 +45,4 @@ const Panel = () => {
     );
 }
 
-export default Panel;
+export default Menu;
