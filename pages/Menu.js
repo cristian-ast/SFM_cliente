@@ -1,17 +1,12 @@
-import React, { useState } from 'react';
 import Head from 'next/head';
 import BaseDatosProvider from '../context/BaseDatosContext';
 import AnunciosProvider from '../context/AnunciosContext';
 import Container from '../components/Container';
-import PanelBuscador from '../components/PanelBuscador';
-import PanelEditor from '../components/PanelEditor';
-import ContenedorPanelEditorMuenu from '../components/ContenedorPanelEditorMenu';
+import ContenedorMenu from '../components/ContenedorMenu';
 
 import logo from '../images/portada.jpg';
 
 const Panel = () => {
-
-    const [ ningunaNoticiaSelecionada, guardarNingunaNoticiaSelecionada ] = useState(true);
 
     return (
         <BaseDatosProvider>
@@ -19,7 +14,7 @@ const Panel = () => {
                 <Container>
                     <Head>
                         <meta charset="utf-8" />
-                        <title>Somos SFM - Panel </title>
+                        <title>Somos SFM - Menú </title>
                         <meta name="description" content="Página de noticias en la ciudad de San Francisco de Macorís, República Domnicana" />
                         <link rel="icon" href="/favicon.ico" />
                         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
@@ -39,18 +34,8 @@ const Panel = () => {
                     </Head>
                     <div className="inicio">
                         <div className="panel-contenedor">
-                            {/* <PanelBuscador/> */}
-
                             <div className="contenedor-panel-editor">
-                                {ningunaNoticiaSelecionada ? 
-                                    <ContenedorPanelEditorMuenu 
-                                        guardarNingunaNoticiaSelecionada={guardarNingunaNoticiaSelecionada} 
-                                    /> 
-                                : 
-                                    <PanelEditor 
-                                        guardarNingunaNoticiaSelecionada={guardarNingunaNoticiaSelecionada} 
-                                    /> 
-                                }
+                                    <ContenedorMenu/> 
                             </div>
                         </div>
                     </div>
