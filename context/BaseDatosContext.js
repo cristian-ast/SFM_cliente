@@ -32,7 +32,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 30, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "https://festive-fermat-68fe12.netlify.app/static/media/MatanatirosartistaurbanofrancomacorisaoMCYow.197ced95.png",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/MatanatirosartistaurbanofrancomacorisaoMCYow.ed2c90f0.jpg",
               video : null,
               cuerpo : [
                 "Las autoridades investigan el hecho en el que murió de un disparo de manos de personas hasta el momento desconocidas el rapero francomacorisano conocido en el mundo artístico como “MC Yow”",
