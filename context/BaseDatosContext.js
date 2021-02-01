@@ -47,7 +47,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 29, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "https://festive-fermat-68fe12.netlify.app/static/media/eljovenRickyJoeldelaCruzquienerabuscado.150b67c0.png",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/eljovenRickyJoeldelaCruzquienerabuscado.a1bff4c2.jpg",
               video : null,
               cuerpo : [
                 "Se entregó esta tarde en el Palacio de la Policía Nacional en la ciudad capital Distrito Nacional, el joven Ricky Joel de la Cruz, quien era buscado para ser investigado con relación a la muerte de dos jóvenes y un niño, ocurrido en una barbería del sector El Capacito de esta ciudad el pasado lunes.",
@@ -63,7 +63,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 28, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "https://festive-fermat-68fe12.netlify.app/static/media/SIESTOYANOSEJODI%C3%93D%C3%8DGAMEQUEFALTAENTONCES.2fb77d6a.png",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/SIESTOYANOSEJODI%C3%93D%C3%8DGAMEQUEFALTAENTONCES.f8b7f2f1.jpg",
               video : null,
               cuerpo : [
                 "Un preso fue sacado de la Cárcel La Victoria para supuestamente ser intervenido quirúrgicamente en el Hospital Moscoso Puello, pero todo fue una trama para escapar.",
@@ -79,7 +79,7 @@ const BaseDatosProvider = (props) => {
               fecha : "ENERO 27, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "https://festive-fermat-68fe12.netlify.app/static/media/Estosdelincuentessehac%C3%ADanpasarpormiembrosdelaDNCD.b3ccb3dd.png",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/Estosdelincuentessehac%C3%ADanpasarpormiembrosdelaDNCD.e7d5f3a6.jpg",
               video : null,
               cuerpo : [
                 "Dirección Regional Santo Domingo Oeste arresta cinco civiles y un militar falsos agentes de la DNCD y que formarían parte de una banda de sicarios en Los Alcarrizos. Les ocupan cinco pistolas y otros pertrechos.",
