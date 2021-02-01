@@ -91,6 +91,51 @@ PageNoticia.getInitialProps = (ctx) => {
     const baseDatos = {
         noticias : [
           {
+            titulo : "General Then realiza cambios policiales en el cibao central.",
+            url : "General-Then-realiza-cambios-policiales-en-el-cibao-central",
+            fecha : "FEBRERO 1, 2021",
+            autor : "Victor Manuel",
+            tipo : "Justicia",
+            img : "https://festive-fermat-68fe12.netlify.app/static/media/GENERALTHENREALIZACAMBIOS.3a1f6264.jpg",
+            video : null,
+            cuerpo : [
+              "El Director Regional Cibao Central de la Policía Nacional, General Eduardo Alberto Then, no le tembló el pulso tras algunos hechos de violencias ocurridos varias semanas atrás originando que el mismo este dirigiendo la búsqueda de los autores de estos actos reprochables y la disposición de varios cambios internos en diferentes Supervisorias, incluyendo la dotación policial completa.",
+              "Con el fin de reforzar y transparentar el accionar Policial y garantizar la paz, tranquilidad, convivencia y seguridad ciudadana."
+            ]
+          },
+          {
+            titulo : "Supuesta fotografía de César Emilio Peralta Adames “César el Abusador”",
+            url : "Supuesta-fotografia-de-Cesar-Emilio-Peralta-Adames-Cesar el Abusador",
+            fecha : "FEBRERO 1, 2021",
+            autor : "Victor Manuel",
+            tipo : "Justicia",
+            img : "https://festive-fermat-68fe12.netlify.app/static/media/CesarelAbusadorendondeseaprecia.3e711575.jpg",
+            video : null,
+            cuerpo : [
+              "Supuesta fotografía de César Emilio Peralta Adames “César el Abusador”, en donde se aprecia los lujos con los lujos y privilegios que tiene en la cárcel colombiana en donde está preso.",
+              "En la imagen se ve una habitación muy bien aseada, colorida y surtida de ropa y calzados nuevos.",
+              "Más bien, parece una habitación de un hotel de lujo o de una mansión de un millonario.",
+              "Peralta Adames, también conocido por los motes de Cabeza, Cabezón, Cacón, el Don y el Hombre, es un dominicano de 45 años, acusado de ser el líder de una organización criminal transnacional que operaba desde la República Dominicana, la cual recibía cargamentos de múltiples kilogramos de cocaína y heroína de Colombia y, subsecuentemente, enviaba las drogas a Puerto Rico y a los Estados Unidos."
+            ]
+          },
+          {
+            titulo : "Detienen una de dos mujeres implicadas en muerte de un joven en SFM",
+            url : "Detienen-una-de-dos-mujeres-implicadas-en-muerte-de-un-joven-en-SFM",
+            fecha : "FEBRERO 1, 2021",
+            autor : "Victor Manuel",
+            tipo : "Justicia",
+            img : "https://festive-fermat-68fe12.netlify.app/static/media/DetienenunadedosmujeresimplicadasenmuertedeunjovenenSFM.d37d8849.jpg",
+            video : null,
+            cuerpo : [
+              "La Policía Nacional detuvo a la joven Natasha Suriel, alias La Real Musa, la cual está siendo vinculada a la muerte de Joel Duran, asesinado de un disparo el domingo, en la Urbanización La Castellana de San Francisco.",
+              "La institución del orden dijo que tiene identificadas todas las personas que participaron en el hecho, debido a que el mismo quedó captado por una cámara de seguridad.",
+              "En su informe la institución del orden señala que la prevenida era acompañada por el nombrado Kelvin Ramon Compres Taveras, alias Burente, de 39 años de edad, residente en San Francisco, a quien se le identificó como conductor del vehículo.",
+              "Asimismo, responsabiliza a los nombrados Alfredo Claces Flores, Barbara Reyes Taveras y otra persona sólo identificada como Ñoña o La Ingeniera, todos residentes en Puerto Plata.",
+              "De acuerdo a la declaraciones ofrecidas por Natasha a la policía, el occiso debía un dinero a Bárbara Reyes, que ésta le había entregado para un trabajo de brujería.",
+              "En las investigaciones policiales también fue identificado el vehículo en que se desplazaban los implicados, que es una camioneta Toyota, Hilux, de color blanco, Placa No. L411639, Chasis: BAJHA3CD802095961."
+            ]
+          },
+          {
             titulo : "Matan a tiros artista urbano francomacorisano MC Yow",
             url : "Matan-a-tiros-artista-urbano-francomacorisano-MC-Yow",
             fecha : "ENERO 30, 2021",
