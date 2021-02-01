@@ -91,6 +91,21 @@ PageNoticia.getInitialProps = (ctx) => {
     const baseDatos = {
         noticias : [
           {
+            titulo : "Ordenan libertad pura y simple al general Acosta Castellanos",
+            url : "Ordenan-libertad-pura-y-simple-al-general-Acosta-Castellanos",
+            fecha : "FEBRERO 1, 2021",
+            autor : "Victor Manuel",
+            tipo : "Justicia",
+            img : "https://festive-fermat-68fe12.netlify.app/static/media/OrdenanlibertadpuraysimplealgeneralAcostaCastellanos.5a998104.jpg",
+            video : null,
+            cuerpo : [
+              "Le fue otorgada la libertad pura y simple al exdirector de la Regional Cibao Central de la Policía Nacional, general Acosta Castellanos, tras no encontrar elementos suficientes sobre los hechos que se le imputaban.",
+              "Acosta Castellanos estaba acusado de abusar sexualmente a una menor edad.",
+              "Supuestamente sostenía una relación sentimental con la menor de edad desde hace dos años y a quien que alegadamente la indujo para que se practicara dos abortos.",
+              "De acuerdo al Ministerio Público la relación entre ambos inició en el 2017, cuando la menor tenía 15 años."
+            ]
+          },
+          {
             titulo : "General Then realiza cambios policiales en el cibao central.",
             url : "General-Then-realiza-cambios-policiales-en-el-cibao-central",
             fecha : "FEBRERO 1, 2021",
