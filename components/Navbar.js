@@ -52,9 +52,9 @@ const Navbar = (props) => {
               <Typography variant="h6" className={classes.title} style={{flexGrow: 1 }}>
                 Somos SFM
               </Typography>
-              <Link href="/Menu">
+              
                 <Button color="inherit"><img className="logoUsuario" src={usuario} alt="usuario"/></Button>
-              </Link>
+              
           </Toolbar>
         </AppBar>
       </div>
@@ -131,10 +131,7 @@ const Navbar = (props) => {
         <div className="navbar--computadoras--division">
           <p>|</p> 
         </div>
-
-        <Link href="/Menu">
           <Button color="inherit"><img className="logoUsuario" src={usuario} alt="usuario"/></Button>
-        </Link>
       </div>
     </div>
   )

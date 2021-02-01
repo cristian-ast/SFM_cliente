@@ -91,15 +91,69 @@ PageNoticia.getInitialProps = (ctx) => {
     const baseDatos = {
         noticias : [
           {
-            titulo : "Siguen los disturbios en Países Bajos",
-            url : "Siguen-los-disturbios-en-Paises-Bajos",
-            fecha : "26 ene 2021",
+            titulo : "Matan a tiros artista urbano francomacorisano MC Yow",
+            url : "Matan-a-tiros-artista-urbano-francomacorisano-MC-Yow",
+            fecha : "ENERO 30, 2021",
             autor : "Victor Manuel",
-            tipo : "Actualidad",
-            img : "https://i.ytimg.com/vi/5_8yDmK9CTM/maxresdefault.jpg",
-            video : "https://www.youtube.com/embed/5_8yDmK9CTM",
+            tipo : "Justicia",
+            img : "https://festive-fermat-68fe12.netlify.app/static/media/MatanatirosartistaurbanofrancomacorisaoMCYow.197ced95.png",
+            video : null,
             cuerpo : [
-              "Decenas de personas vuelven a enfrentarse con la policía y a armar barricadas en las calles de ciudades como Ámsterdam y Rotterdam. Muchos holandeses están cansados de las restricciones para contener la pandemia, otros critican a los manifestantes y culpan a grupos de vándalos de los desmanes y los saqueos."
+              "Las autoridades investigan el hecho en el que murió de un disparo de manos de personas hasta el momento desconocidas el rapero francomacorisano conocido en el mundo artístico como “MC Yow”",
+              "Se trata de Juan Joel Durán, conocido en el mundo artístico como“MC Yow” quien fue ultimado de un disparo por personas hasta el momento desconocidas que se desplazaban en una camioneta en la urbanización Castellanos de esta ciudad.",
+              "En tanto que familiares de Durán descartan que éste tuviera enemigos, por lo que desconocen las razones.",
+              "Mientras que miembros de la Policía Nacional se presentaron al lugar a los fines de recolectar información para de inmediato iniciar las investigaciones, junto al Ministerio Publico y  un médico legista para realizar el levantamiento del cadáver y enviarlo a la morgue del hospital San Vicente de Paúl de esta localidad."
+            ]
+          },
+          {
+            titulo : "Se entregó el joven Ricky Joel de la Cruz",
+            url : "Se-entrego-el-joven-Ricky-Joel-de-la-Cruz",
+            fecha : "ENERO 29, 2021",
+            autor : "Victor Manuel",
+            tipo : "Justicia",
+            img : "https://festive-fermat-68fe12.netlify.app/static/media/eljovenRickyJoeldelaCruzquienerabuscado.150b67c0.png",
+            video : null,
+            cuerpo : [
+              "Se entregó esta tarde en el Palacio de la Policía Nacional en la ciudad capital Distrito Nacional, el joven Ricky Joel de la Cruz, quien era buscado para ser investigado con relación a la muerte de dos jóvenes y un niño, ocurrido en una barbería del sector El Capacito de esta ciudad el pasado lunes.",
+              "La Policía Nacional ha realizado varios allanamiento a la vivienda de De La Cruz, sin embargo no fue encontrado en la misma, ubicada en la calle 4 del sector San Martin de Porres (Rabo Chivo).",
+              "Miembros del Departamento de Investigaciones Criminales (DICRIM) del cuerpo del orden partieron hacia Santo Domingo a los fines de trasladar el detenido a la ciudad de San Francisco de Macorís, para ser investigado y ponerlo a disposición de la justicia.",
+              "Las autoridades investigan el asesinato del niño de dos años Jacob Tejada Mora, su tío Yenier Tejada Dickson y el joven Ranfiel Jimenez, hecho en el que resultaron heridos los nombrados Jeffrey Sanchez Cruz y Luis Angel Bonilla.",
+              "Por el hecho la policía busca activamente a Alex Jose Hernandez alias El Flow y a un tal Juan El Santiaguero, señalados como el gatillero y el conductor de la motocicleta, respectivamente."
+            ]
+          },
+          {
+            titulo : "SI ESTO YA NO SE JODIÓ, DÍGAME QUE FALTA ENTONCES?",
+            url : "SI-ESTO-YA-NO-SE-JODIO-DIGAME-QUE-FALTA-ENTONCES",
+            fecha : "ENERO 28, 2021",
+            autor : "Victor Manuel",
+            tipo : "Justicia",
+            img : "https://festive-fermat-68fe12.netlify.app/static/media/SIESTOYANOSEJODI%C3%93D%C3%8DGAMEQUEFALTAENTONCES.2fb77d6a.png",
+            video : null,
+            cuerpo : [
+              "Un preso fue sacado de la Cárcel La Victoria para supuestamente ser intervenido quirúrgicamente en el Hospital Moscoso Puello, pero todo fue una trama para escapar.",
+              "Según informe policial, el interno Carlos Alberto Rodríguez fue referido al Hospital Moscoso Puello bajo custodia del cabo Natanael Reyes, las autoridades de la cárcel le otorgaron el permiso, sin imaginarse que había un muñeco armado para un escape.",
+              "Resulta que el agente policial ya estando en el Centro de salud, llamó a su superior para comunicarle que el preso Rodríguez se había muerto  cuando era intervenido quirúrgicamente por una gastritis aguda.",
+              "Al custodia le pidieron una foto del cadáver para corroborar los hechos, éste sin pensarlo dos veces la envío, pensando que él y el interno lograron con éxito su hazaña, sin embargo fue enviado al centro de salud al primer teniente Peña Reynoso quien fue a contactar todos los detalles y a reconocer el cuerpo, al llegar allí se encontró con una gran sorpresa la imagen que le habían enviado era falsa y el hermano del preso se hizo pasar por él, mientras Rodríguez llegó a escapar.",
+              "Al ser cuestionado el cabo indicó que el interno pidió entrará al baño y que supuestamente luego lo encañonó y después lo obligó a montarse con él en un carro hasta conducirlo al sector El Capotillo."
+            ]
+          },
+          {
+            titulo : "Estos delincuentes se hacían pasar por miembros de la DNCD",
+            url : "Estos-delincuentes-se-hacian-pasar-por-miembros-de-la-DNCD",
+            fecha : "ENERO 27, 2021",
+            autor : "Victor Manuel",
+            tipo : "Justicia",
+            img : "https://festive-fermat-68fe12.netlify.app/static/media/Estosdelincuentessehac%C3%ADanpasarpormiembrosdelaDNCD.b3ccb3dd.png",
+            video : null,
+            cuerpo : [
+              "Dirección Regional Santo Domingo Oeste arresta cinco civiles y un militar falsos agentes de la DNCD y que formarían parte de una banda de sicarios en Los Alcarrizos. Les ocupan cinco pistolas y otros pertrechos.",
+              "Un equipo de policías encabezados por el coronel Franklin Grullon Collado capturaron a seis hombres, incluyendo un militar que se hacían pasar como agentes de la Dirección Nacional de Control de Drogas (DNCD) y a los que les fueron ocupadas cinco pistolas y otros pertrechos y quienes formarían parte una banda de sicarios, de acuerdo a la Policia.",
+              "En una operación relámpago realizada por la Dirección Regional Santo Domingo Oeste encabezada por el coronel Franklin Grullon Collado, los seis hombres fueron atrapados en el kilómetro 17 de la autopista Duarte cuando se dirigían por el carrir que conduce a la región Norte del País.",
+              "En el operativo fue arrestado Carlos David Matos Fernández, a quien se les ocupó una escopeta marca Saiga con tres cargadores, (32) cartuchos, un cuchillo tipo bayoneta, una pistola marca Glock 26, número PLY907, dos cargadores para la misma, un cargador de 30 cápsulas, un cargador de 17 capsulas, 30 cápsulas 9 milímetros, tres celulares Phone y un carnet de la DNCD.",
+              "Así también Javier Jasmil Sánchez Reyes, a quien se les ocupó una pistola marca Glock 17 número KHC851, dos cargadores para la misma, un cargador de 30 cápsulas 9 milímetros y un celular iPhone.",
+              "De igual modo Yoanty Javier Segura Ramírez, ocupandole una pistola marca Glock 19 número LUB374, tres cargadores para la misma, 22 cápsulas, un carnet de la DNCD, un carnet de Prensa del canal 19 como corresponsal y dos celulares Phone.",
+              "Además el cabo de la Fuerza Aérea de la República Dominicana (FARD) Joniel Bonilla, ocupandole una pistola marca Glock número BPSH553 con dos cargadores para la misma, un cargador de 45 cápsulas 9 milímetros, dos celulares y un carnet de la (FARD).",
+              "Junto a los falsos agentes con carnet falsificados, fueron arrestados los nombrados, Samil Alberto Perdoma y Sergio Antonio Méndez sin ninguna identificación, quienes dijeron ser supuestos informantes."
             ]
           },
           {
