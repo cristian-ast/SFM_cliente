@@ -93,18 +93,6 @@ const BaseDatosProvider = (props) => {
               ]
             },
             {
-              titulo : "Siguen los disturbios en Países Bajos",
-              url : "/Siguen-los-disturbios-en-Paises-Bajos",
-              fecha : "26 ene 2021",
-              autor : "Victor Manuel",
-              tipo : "Actualidad",
-              img : "https://i.ytimg.com/vi/5_8yDmK9CTM/maxresdefault.jpg",
-              video : "https://www.youtube.com/embed/5_8yDmK9CTM",
-              cuerpo : [
-                "Decenas de personas vuelven a enfrentarse con la policía y a armar barricadas en las calles de ciudades como Ámsterdam y Rotterdam. Muchos holandeses están cansados de las restricciones para contener la pandemia, otros critican a los manifestantes y culpan a grupos de vándalos de los desmanes y los saqueos."
-              ]
-            },
-            {
               titulo : "Hallan mujer italiana muerta dentro de una nevera en Punta Cana",
               url : "/Hallan-mujer-italiana-muerta-dentro-de-una-nevera-en-Punta-Cana",
               fecha : "ENERO 22, 2021",
