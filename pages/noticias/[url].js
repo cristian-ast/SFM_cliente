@@ -91,7 +91,7 @@ PageNoticia.getInitialProps = (ctx) => {
     const baseDatos = {
         noticias : [
           {
-            titulo : "Desmantelamos un laboratorio, invernadero y plantación clandestina de marihuana",
+            titulo : "Desmantelamos un laboratorio y plantación clandestina de marihuana",
             url : "Desmantelamos-un-laboratorio-invernadero-y-plantacion-clandestina-de-marihuana",
             fecha : "FEBRERO 2, 2021",
             autor : "Victor Manuel",
