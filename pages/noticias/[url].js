@@ -91,6 +91,22 @@ PageNoticia.getInitialProps = (ctx) => {
     const baseDatos = {
         noticias : [
           {
+            titulo : "Desmantelamos un laboratorio, invernadero y plantación clandestina de marihuana",
+            url : "Desmantelamos-un-laboratorio-invernadero-y-plantacion-clandestina-de-marihuana",
+            fecha : "FEBRERO 2, 2021",
+            autor : "Victor Manuel",
+            tipo : "Justicia",
+            img : "https://festive-fermat-68fe12.netlify.app/static/media/DesmantelamosjuntoalMinisterio.c9bdc450.jpg",
+            video : null,
+            cuerpo : [
+              "Nuestra Policía Nacional informa, que a través del Ministerio Público de Barahona, y la Dirección Central de Antinarcóticos (DICAN), desmantelaron el pasado sábado un invernadero donde eran cultivadas centenares de plantas presumiblemente marihuana, en una zona apartada entre las lomas denominadas Friosito” y Punta Alegre en el municipio de Paraíso, donde además se realizaba el procesamiento de secado del vegetal, antes de ser empacado.",
+              "Al llegar a la ubicación, las autoridades encontraron el invernadero, así como un rancho, equipado con todo tipos de utensilios e indumentarias, propios para el cultivo y procesamiento, entre ellos: paneles solares, fertilizantes, equipos de aspersión, tijeras para corte y poda de plantas, balanzas, cintas adhesivas, rollos de material plástico; fueron decomisadas un total de 635 plantas de Cannabis Sativa.",
+              "Asimismo, detuvieron tres hombres identificados como Erick Domingo Guzmán Beltré (a) El Doctor, César Lebreault Guzmán y José Pérez, quienes eran los encargados vigilar y cuidar el rancho y la plantación. ",
+              "Se recuerda que, a principio de noviembre de 2020, la DNCD, DICAN y el Ministerio Público de Jarabacoa, incautaron una plantación considerable del referido vegetal narcótico en una zona montañosa colindante con la provincia Azua; luego, a principio del mes de enero, la DICAN decomisó una gran cantidad de matas de un vegetal similar en las lomas de Las Guamitas, provincia Santiago.",
+              "En las próximas horas, los arrestados serán puestos a disposición de la justicia, en tanto que, el vegetal decomisado será trasladado al Instituto Nacional de Ciencias Forenses (INACIF) en el Distrito Nacional."
+            ]
+          },
+          {
             titulo : "Ordenan libertad pura y simple al general Acosta Castellanos",
             url : "Ordenan-libertad-pura-y-simple-al-general-Acosta-Castellanos",
             fecha : "FEBRERO 1, 2021",
