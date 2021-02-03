@@ -32,7 +32,7 @@ const BaseDatosProvider = (props) => {
               fecha : "FEBRERO 2, 2021",
               autor : "Victor Manuel",
               tipo : "Justicia",
-              img : "https://festive-fermat-68fe12.netlify.app/static/media/DesmantelamosjuntoalMinisterio.c9bdc450.jpg",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/DesmantelamosjuntoalMinisterio.a51e5295.jpg",
               video : null,
               cuerpo : [
                 "Nuestra Policía Nacional informa, que a través del Ministerio Público de Barahona, y la Dirección Central de Antinarcóticos (DICAN), desmantelaron el pasado sábado un invernadero donde eran cultivadas centenares de plantas presumiblemente marihuana, en una zona apartada entre las lomas denominadas Friosito” y Punta Alegre en el municipio de Paraíso, donde además se realizaba el procesamiento de secado del vegetal, antes de ser empacado.",
