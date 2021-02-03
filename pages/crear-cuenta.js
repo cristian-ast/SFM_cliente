@@ -4,39 +4,18 @@ import BaseDatosProvider from '../context/BaseDatosContext';
 import AnunciosProvider from '../context/AnunciosContext';
 import Container from '../components/Container';
 
-import AlertaContext from '../context/alertas/alertaContext';
-import AuthContext from '../context/autenticacion/authContext';
-
 import logo from '../images/logo.jpeg';
+import { Description } from '@material-ui/icons';
 
 const CrearCuenta = () => {
-    // extraer los valores del context
-    // const alertaContext = useContext(AlertaContext);
-    // const { alerta, mostrarAlerta } = alertaContext;
-
-    // const authContext = useContext(AuthContext);
-    // const { mensaje, autenticado, iniciarSesion } = authContext;
-
-    //   // En caso de que el password o usuario no exista
-    //   useEffect(() => {
-    //     if(autenticado) {
-    //         props.history.push('/proyectos');
-    //     }
-
-    //     if(mensaje) {
-    //         mostrarAlerta(mensaje.msg, mensaje.categoria);
-    //     }
-    //     // eslint-disable-next-line
-    // }, [mensaje, autenticado, props.history]);
-
-    // State para iniciar sesión
     const [usuario, guardarUsuario] = useState({
         email: '',
-        password: ''
+        password: '',
+        repetir: ''
     });
 
     // extraer de usuario
-    const { email, password } = usuario;
+    const { email, password, repetir } = usuario;
 
     const onChange = e => {
         guardarUsuario({
@@ -45,17 +24,78 @@ const CrearCuenta = () => {
         })
     }
 
+    // state de las alertas
+    const [mostrarAlerta, guardarMostrarAlerta] = useState({
+        mostrar: false,
+        description : "Todos los campos son obligatorios"
+    });
+
     // Cuando el usuario quiere iniciar sesión
     const onSubmit = e => {
         e.preventDefault();
 
-        // // Validar que no haya campos vacios
-        // if(email.trim() === '' || password.trim() === '') {
-        //     mostrarAlerta('Todos los campos son obligatorios', 'alerta-error');
-        // }
+        // Validar que no haya campos vacios
+        if(email.trim() === '' || password.trim() === '' || repetir.trim() === '') {
+            
+            guardarMostrarAlerta({
+                ...mostrarAlerta,
+                mostrar: true,
+                description : "Todos los campos son obligatorios"
+            });
 
-        // // Pasarlo al action
-        // iniciarSesion({ email, password });
+            setTimeout(() => {
+              guardarMostrarAlerta({
+                ...mostrarAlerta,
+                mostrar: false,
+                });
+
+            }, 5000);
+
+            return;
+        }
+
+        // Validar que las contraseñas sean minino de 6 caracteres
+        if(password.length < 6 || repetir.length < 6 ) {
+            
+            guardarMostrarAlerta({
+                ...mostrarAlerta,
+                description : "La contraseña debe ser mínimo de 6 caracteres",
+                mostrar: true
+            });
+
+            setTimeout(() => {
+              guardarMostrarAlerta({
+                ...mostrarAlerta,
+                mostrar: false,
+                });
+
+            }, 5000);
+
+            return;
+        }
+
+        // Validar que las contraseñas sean iguales
+        if(!(password === repetir) ){
+            
+            guardarMostrarAlerta({
+                ...mostrarAlerta,
+                description : "La contraseña debe ser iguales en ambos campos",
+                mostrar: true
+            });
+
+            setTimeout(() => {
+              guardarMostrarAlerta({
+                ...mostrarAlerta,
+                mostrar: false,
+                });
+
+            }, 5000);
+
+            return;
+        }
+
+
+
     }
 
     return (
@@ -91,6 +131,7 @@ const CrearCuenta = () => {
                                         <form
                                             onSubmit={onSubmit}
                                         >
+                                            
                                             <div className="campo-form">
                                                 <label htmlFor="email">Email</label>
                                                 <input
@@ -115,9 +156,9 @@ const CrearCuenta = () => {
                                                 <label htmlFor="email">Repite tu Contraseña</label>
                                                 <input
                                                     type="password"
-                                                    id="password"
-                                                    name="password"
-                                                    placeholder="Ingrese su Contraseña"
+                                                    id="repetir"
+                                                    name="repetir"
+                                                    placeholder="Repite tu Contraseña"
                                                     onChange={onChange}
                                                 />
                                             </div>
@@ -129,11 +170,15 @@ const CrearCuenta = () => {
                                                 />
                                             </div>
                                         </form>
+                                        {mostrarAlerta.mostrar ? <div className="mostrarAlerta">{mostrarAlerta.description}</div> : null}
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
+                    <br/>
+                    <br/>
                 </Container> 
             </AnunciosProvider>
         </BaseDatosProvider>

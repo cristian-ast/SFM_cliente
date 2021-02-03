@@ -774,3 +774,9 @@ a {
 .contenedor-perfil-img > img {
   width: 120px;
 }
+
+.mostrarAlerta {
+  padding: 10px;
+  font-weight: bolder;
+  color: red;
+}

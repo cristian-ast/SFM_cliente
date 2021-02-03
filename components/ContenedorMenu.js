@@ -3,6 +3,7 @@ import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import EditIcon from '@material-ui/icons/Edit';
 import Link from 'next/link';
 import usuario from '../images/usuario.png';
+import CloseIcon from '@material-ui/icons/Close';
 
 const ContenedorMuenu = () => {
     return (
@@ -59,6 +60,29 @@ const ContenedorMuenu = () => {
                 >
                     Editar Anuncio
                 </Button>
+                <br/>
+                <Link href={"/crear-cuenta"}>
+                    <Button
+                        color="primary"
+                        className="PanelBuscadorVerNoticia-img-botones z-index-b with-boton-menu"
+                        size="small"
+                        variant="contained"
+                    >
+                        Añadir nuevo administrador
+                    </Button>
+                </Link>
+                <br/>
+                <Link href={"/"}>
+                    <Button
+                        color="secondary"
+                        className="PanelBuscadorVerNoticia-img-botones z-index-b with-boton-menu"
+                        size="small"
+                        variant="contained"
+                        startIcon={<CloseIcon />}
+                    >
+                        Cerrar sesión
+                    </Button>
+                </Link>
             </div>    
         </div>
     );

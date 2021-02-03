@@ -38,6 +38,12 @@ const IniciarSesion = () => {
     // extraer de usuario
     const { email, password } = usuario;
 
+    // state de las alertas
+    const [mostrarAlerta, guardarMostrarAlerta] = useState({
+        mostrar: false,
+        description : "Todos los campos son obligatorios"
+    });
+
     const onChange = e => {
         guardarUsuario({
             ...usuario,
@@ -49,13 +55,45 @@ const IniciarSesion = () => {
     const onSubmit = e => {
         e.preventDefault();
 
-        // // Validar que no haya campos vacios
-        // if(email.trim() === '' || password.trim() === '') {
-        //     mostrarAlerta('Todos los campos son obligatorios', 'alerta-error');
-        // }
+        // Validar que no haya campos vacios
+        if(email.trim() === '' || password.trim() === '') {
+            
+            guardarMostrarAlerta({
+                ...mostrarAlerta,
+                mostrar: true,
+                description : "Todos los campos son obligatorios"
+            });
 
-        // // Pasarlo al action
-        // iniciarSesion({ email, password });
+            setTimeout(() => {
+              guardarMostrarAlerta({
+                ...mostrarAlerta,
+                mostrar: false,
+                });
+
+            }, 5000);
+
+            return;
+        }
+
+        // Validar que las contraseñas sean minino de 6 caracteres
+        if(password.length < 6) {
+            
+            guardarMostrarAlerta({
+                ...mostrarAlerta,
+                description : "La contraseña debe ser mínimo de 6 caracteres",
+                mostrar: true
+            });
+
+            setTimeout(() => {
+              guardarMostrarAlerta({
+                ...mostrarAlerta,
+                mostrar: false,
+                });
+
+            }, 5000);
+
+            return;
+        }
     }
 
     return (
@@ -119,6 +157,7 @@ const IniciarSesion = () => {
                                                 />
                                             </div>
                                         </form>
+                                        {mostrarAlerta.mostrar ? <div className="mostrarAlerta">{mostrarAlerta.description}</div> : null}
                                     </div>
                                 </div>
                             </div>
