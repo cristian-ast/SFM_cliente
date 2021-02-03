@@ -27,6 +27,19 @@ const BaseDatosProvider = (props) => {
             //   ]
             // },
             {
+              titulo : "Padre violaba a hija desde los 9 años en San Francisco de Macorís",
+              url : "/Padre-violaba-a-hija-desde-los-9",
+              fecha : "FEBRERO 3, 2021",
+              autor : "Victor Manuel",
+              tipo : "Justicia",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/PADREVIOLABASUHIJADESDELOS9.74e2bef2.jpg",
+              video : null,
+              cuerpo : [
+                "Un hombre padre de una niña de 11 años de edad a quien su padre abusaba sexualmente fue apresado por agente policiales tras la menor comentarle a una tía que este le violaba desde sus 9 años.",
+                "Se trata del nombrado Alejandro Taveras Hernández, la niña manifestó que no queso embarazada  porque el se colocaba preservativos y de no aceptar entonces la golpeaba salvajemente con una correa,  quien en las próximas horas sera puesto a disposición de la justicia."
+              ]
+            },
+            {
               titulo : "Desmantelamos un laboratorio y plantación clandestina de marihuana",
               url : "/Desmantelamos-un-laboratorio-invernadero-y-plantacion-clandestina-de-marihuana",
               fecha : "FEBRERO 2, 2021",
