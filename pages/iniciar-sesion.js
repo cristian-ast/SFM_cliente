@@ -4,30 +4,9 @@ import BaseDatosProvider from '../context/BaseDatosContext';
 import AnunciosProvider from '../context/AnunciosContext';
 import Container from '../components/Container';
 
-import AlertaContext from '../context/alertas/alertaContext';
-import AuthContext from '../context/autenticacion/authContext';
-
 import logo from '../images/logo.jpeg';
 
 const IniciarSesion = () => {
-    // extraer los valores del context
-    // const alertaContext = useContext(AlertaContext);
-    // const { alerta, mostrarAlerta } = alertaContext;
-
-    // const authContext = useContext(AuthContext);
-    // const { mensaje, autenticado, iniciarSesion } = authContext;
-
-    //   // En caso de que el password o usuario no exista
-    //   useEffect(() => {
-    //     if(autenticado) {
-    //         props.history.push('/proyectos');
-    //     }
-
-    //     if(mensaje) {
-    //         mostrarAlerta(mensaje.msg, mensaje.categoria);
-    //     }
-    //     // eslint-disable-next-line
-    // }, [mensaje, autenticado, props.history]);
 
     // State para iniciar sesión
     const [usuario, guardarUsuario] = useState({
