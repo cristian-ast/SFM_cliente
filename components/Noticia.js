@@ -12,7 +12,7 @@ const Noticia = ({titulo, img, url}) => {
                 className="noticia--indivudual" 
             >
                 <div className="titulo--noticia">
-                    <p><b>{titulo}</b></p>
+                    <p><b>{titulo.slice( 0 , 70) + "..."}</b></p>
                 </div>
             </div>
         </Link>
