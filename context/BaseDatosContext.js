@@ -27,6 +27,22 @@ const BaseDatosProvider = (props) => {
             //   ]
             // },
             {
+              titulo : "Ocuparon armas blancas, cigarrillos y celulares en fortaleza Duarte de SFM",
+              url : "/Ocuparon-armas-blancas-cigarrillos-y-celulares-en-fortaleza-Duarte-de-SFM",
+              fecha : "FEBRERO 3, 2021",
+              autor : "Victor Manuel",
+              tipo : "Justicia",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/OcuparonarmasblancascigarrillosycelularesenfortalezaDuartedeSFM.8581fef7.jpg",
+              video : null,
+              cuerpo : [
+                "Durante una requisa realizada ayer en la fortaleza Juan Pablo Duarte (cosobo) de este municipio, las autoridades incautaron armas blancas, cigarrillos y celulares.",
+                "Las autoridades no especificaron la cantidad de dichos objetos que no deben ser utilizados por personas privadas de su libertad.",
+                "Asimismo, fueron incautadas una cantidad indeterminada de cargadores de celulares.",
+                "La requisa fue realizada por la Dirección General de Prisiones, el Nuevo Modelo de Gestión Penitenciarias conjuntamente con el Ministerio Público",
+                "Se presume que el procedimiento se realizó tras una denuncia que hiciera  la esposa de un interno conocido como Wilman."
+              ]
+            },
+            {
               titulo : "Padre violaba a hija desde los 9 años en San Francisco de Macorís",
               url : "/Padre-violaba-a-hija-desde-los-9",
               fecha : "FEBRERO 3, 2021",
