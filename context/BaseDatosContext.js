@@ -17,7 +17,6 @@ const BaseDatosProvider = (props) => {
             //   autor : "Victor Manuel",
             //   tipo : "",
             //   img : "",
-            //   imgBig : "",
             //   video : null,
             //   cuerpo : [
             //     "",
@@ -26,6 +25,21 @@ const BaseDatosProvider = (props) => {
             //     ""
             //   ]
             // },
+            {
+              titulo : "Piden un año de prisión para Argenis Contreras y declarar complejo caso Yuniol Ramírez",
+              url : "/Piden-un-ano-de-prision-para-Argenis-Contreras-y-declarar-complejo-caso-Yuniol-Ramirez",
+              fecha : "FEBRERO 4, 2021",
+              autor : "Victor Manuel",
+              tipo : "Justicia",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/Pidenuna%C3%B1odeprisi%C3%B3nparaArgenisContrerasydeclararcomplejocasoYuniolRam%C3%ADrez.365a7dbc.jpg",
+              video : null,
+              cuerpo : [
+                "El Ministerio Público solicitó un año de prisión preventiva como medida de coerción contra Argenis Contreras y declarar complejo el caso Yuniol Ramírez.",
+                "Dicha solicitud fue depositada por los miembros del Ministerio, Mirna Ortiz, Wagner Cubilete y Pedro Frías, a las 10:30 de mañana, ya que el plazo de las 48 horas se vencía a las 12:05 del mediodía, contra Contreras, quien está siendo  acusado de ser el principal responsable del asesinato del catedrático y abogado Yuniol Ramírez.",
+                "Asimismo, en dicha solicitud, piden levantar la declaración de rebeldía a Argenis Contreras y que se fije conocer la medida de coerción al imputado.",
+                "Los fiscales depositaron la solicitud ante el Cuarto Juzgado de la Instrucción del Distrito Nacional, debido a que ese tribunal está apoderado del caso."
+              ]
+            },
             {
               titulo : "Ocuparon armas blancas, cigarrillos y celulares en fortaleza Duarte de SFM",
               url : "/Ocuparon-armas-blancas-cigarrillos-y-celulares-en-fortaleza-Duarte-de-SFM",
