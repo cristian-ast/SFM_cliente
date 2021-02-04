@@ -92,7 +92,7 @@ PageNoticia.getInitialProps = (ctx) => {
         noticias : [
           {
             titulo : "Ocuparon armas blancas, cigarrillos y celulares en fortaleza Duarte de SFM",
-            url : "/Ocuparon-armas-blancas-cigarrillos-y-celulares-en-fortaleza-Duarte-de-SFM",
+            url : "Ocuparon-armas-blancas-cigarrillos-y-celulares-en-fortaleza-Duarte-de-SFM",
             fecha : "FEBRERO 3, 2021",
             autor : "Victor Manuel",
             tipo : "Justicia",
