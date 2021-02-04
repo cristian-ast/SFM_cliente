@@ -53,8 +53,6 @@ const Navbar = (props) => {
                 Somos SFM
               </Typography>
               
-                <Button color="inherit"><img className="logoUsuario" src={usuario} alt="usuario"/></Button>
-              
           </Toolbar>
         </AppBar>
       </div>
@@ -126,13 +124,8 @@ const Navbar = (props) => {
             <VerifiedUserIcon style={{ fontSize: 20 }} /> <p>Políticas de Privacidad</p> 
           </div>
         </Link>
-        
-
-        <div className="navbar--computadoras--division">
-          <p>|</p> 
+      
         </div>
-          <Button color="inherit"><img className="logoUsuario" src={usuario} alt="usuario"/></Button>
-      </div>
     </div>
   )
 }

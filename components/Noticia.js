@@ -12,7 +12,7 @@ const Noticia = ({titulo, img, url}) => {
                 className="noticia--indivudual" 
             >
                 <div className="titulo--noticia">
-                    <p>{titulo}</p>
+                    <p><b>{titulo}</b></p>
                 </div>
             </div>
         </Link>

@@ -15,9 +15,6 @@ import SportsCricketIcon from '@material-ui/icons/SportsCricket';
 import PolicyIcon from '@material-ui/icons/Policy';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
 import PollIcon from '@material-ui/icons/Poll';
-
-import InfoIcon from '@material-ui/icons/Info';
-import ContactsIcon from '@material-ui/icons/Contacts';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import ImportContactsIcon from '@material-ui/icons/ImportContacts';
 
@@ -116,24 +113,6 @@ const NavDrawer = (props) => {
       </List>
       <Divider />
       <List>
-
-      {/* <Link href="/Sobre-Nosotros">
-        <ListItem button>
-          <ListItemIcon>
-            <InfoIcon/>
-          </ListItemIcon>
-          <ListItemText primary={"Sobre Nosotros"} />
-        </ListItem>
-      </Link> */}
-        
-      {/* <Link href="/Contacto">
-        <ListItem button>
-          <ListItemIcon>
-            <ContactsIcon/>
-          </ListItemIcon>
-          <ListItemText primary={"Contacto"} />
-        </ListItem>
-      </Link> */}
         
       <Link href="/Politicas-De-Privacidad">
         <ListItem button>
