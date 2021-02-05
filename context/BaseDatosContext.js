@@ -26,6 +26,20 @@ const BaseDatosProvider = (props) => {
             //   ]
             // },
             {
+              titulo : "Policía arresta a hombre prófugo desde el año pasado acusado de violar niña de 8 años en Pantoja",
+              url : "/Policia-arresta-a-hombre-profugo-desde-el-ano-pasado-acusado-de-violar-nina",
+              fecha : "FEBRERO 5, 2021",
+              autor : "Victor Manuel",
+              tipo : "Justicia",
+              img : "https://festive-fermat-68fe12.netlify.app/static/media/Polic%C3%ADaarrestaahombrepr%C3%B3fugodesde.34f24b33.jpg",
+              video : null,
+              cuerpo : [
+                "Santo Domingo Oeste, República Dominicana.-Un hombre fue arrestado por la policía nacional por tener orden de arresto acusado de haber violado sexualmente una niña de 8 años.",
+                "Rafael Radhames Hernández Sánchez, fue detenido gracia a la prontitud del coronel Valenzuela, ya que la madre dijo que había ido a el Palacio de la Policía y no hubiera recibido respuesta.",
+                "Sánchez quien presuntamente había cometido los hechos hace 6 meses, pero se mantenía prófugo gracias a la negligencia de las autoridades."
+              ]
+            },
+            {
               titulo : "Piden un año de prisión para Argenis Contreras y declarar complejo caso Yuniol Ramírez",
               url : "/Piden-un-ano-de-prision-para-Argenis-Contreras-y-declarar-complejo-caso-Yuniol-Ramirez",
               fecha : "FEBRERO 4, 2021",
