@@ -91,6 +91,20 @@ PageNoticia.getInitialProps = (ctx) => {
     const baseDatos = {
         noticias : [
           {
+            titulo : "Policía en Santiago lleva soluciones a barrios de Santiago",
+            url : "Policia-en-Santiago-lleva-soluciones-a-barrios-de-Santiago",
+            fecha : "FEBRERO 5, 2021",
+            autor : "Victor Manuel",
+            tipo : "Actualidad",
+            img : "https://festive-fermat-68fe12.netlify.app/static/media/POLIC%C3%8DAENSANTIAGOLLEVASOLUCIOSABARRIOSDESANTIAGO.8edad464.jpg",
+            video : null,
+            cuerpo : [
+              "Miembros de la Dirección Regional Cibao Central, siguiendo las directrices del Director General de la institución, Mayor General, Lic. Edward Sánchez y los lineamientos de su Director Regional, General Eduardo Alberto Then, con relación a la proximidad Policial y la búsqueda de soluciones a problemas sociales, Tras una avería que impide el suministro de agua potable y la realización de trabajos técnicos por parte de empleados de la institución de CORAASAN, llevaron a cabo en la ciudad de Santiago una jornada de suministro de agua potable en varios barrios de la provincia.",
+              "La iniciativa se desarrolló tras los acercamientos por miembros policiales con juntas de vecinos, los cuales expresaron la situación que les estaba generando lo antes expuesto.",
+              "La Policía Nacional sigue generando confianza y trabajando junto a los ciudadanos por la paz, tranquilidad, seguridad y convivencia pacífica."
+            ]
+          },
+          {
             titulo : "En Barahona hermano mata otro que le era infiel con su esposa",
             url : "En-Barahona-hermano-mata-otro-que-le-era-infiel-con-su-esposa",
             fecha : "FEBRERO 5, 2021",
