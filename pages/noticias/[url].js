@@ -91,6 +91,24 @@ PageNoticia.getInitialProps = (ctx) => {
     const baseDatos = {
         noticias : [
           {
+            titulo : "En Barahona hermano mata otro que le era infiel con su esposa",
+            url : "En-Barahona-hermano-mata-otro-que-le-era-infiel-con-su-esposa",
+            fecha : "FEBRERO 5, 2021",
+            autor : "Victor Manuel",
+            tipo : "Justicia",
+            img : "https://festive-fermat-68fe12.netlify.app/static/media/EnBarahonahermanomataotroqueleerainfielconsuesposa.7bcc5c1f.jpg",
+            video : null,
+            cuerpo : [
+              "El hecho de sangre ocurrió esta mañana en una calle del municipio de La Ciénaga",
+              "Un hombre celoso mató hoy a su hermano de crianza, que es miembro de la Policía Nacional, tras enterarse de que este, supuestamente, había mantenido relaciones sexuales con su pareja.",
+              "Holmes Roberto Feliz, quien fue asesinado por un hombre que sólo se conoce como Sharly Melo, según una fuente de entero crédito dijo que los dos victimarios y víctimas  eran hijo de una misma  pareja.",
+              "Para cometer el hecho el homicida tomó el arma de reglamento de su hermano de crianza, quien la había dejado en su vivienda y lo ultimó, cuando se encontró con él en la vía pública de aquí.",
+              "Se supo que antes de dispararle le vociferó algunas cosas que no se entendieron muy bien ya que es tartamudo.",
+              "Esta es una información que está en proceso ya que se espera el informe oficial de la Policía sobre el hecho.",
+              "Hasta ahora se desconoce dónde se encuentra la mujer del victimario, la cual está embarazada, según se supo."
+            ]
+          },
+          {
             titulo : "Policía arresta a hombre prófugo desde el año pasado acusado de violar niña de 8 años en Pantoja",
             url : "Policia-arresta-a-hombre-profugo-desde-el-ano-pasado-acusado-de-violar-nina",
             fecha : "FEBRERO 5, 2021",
