@@ -6,7 +6,7 @@ const Noticia = ({titulo, img, url}) => {
     //Recordar que los url de la api no traen el " / " al inicio, pero los del context si!!!
 
     return (
-        <Link href={"/noticias" + url}>
+        <Link href={"/noticias/" + url}>
             <div 
                 style={{ backgroundImage: `url(${img})`, backgroundSize: "contain"}}
                 className="noticia--indivudual" 

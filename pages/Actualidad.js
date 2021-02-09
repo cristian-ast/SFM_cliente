@@ -1,18 +1,37 @@
 import Head from 'next/head';
-import BaseDatosProvider from '../context/BaseDatosContext';
-import AnunciosProvider from '../context/AnunciosContext';
+import { useEffect, useState } from 'react';
+import clienteAxios from '../config/axios';
 import Container from '../components/Container';
-
-import AdsComputadora from '../components/AdsComputadora';
+//import AdsComputadora from '../components/AdsComputadora';
 import Noticias from '../components/Noticias';
 
 import logo from '../images/logo.jpeg';
 
 const Actualidad = () => {
+
+    const [ BaseDatos, guardarBaseDatos ] = useState([]);
+
+    const BuscarLasNoticias = async () => {
+      
+      const datos = { tipo : "Actualidad" };
+
+      try {
+
+        const respuesta = await clienteAxios.post('/api/noticias/tipo/', datos);
+        guardarBaseDatos(respuesta.data);
+          
+      } catch (error) {
+        console.log(error);
+        guardarBaseDatos([]);
+      }
+    }
+
+    useEffect(() => {
+      BuscarLasNoticias();
+    }, []);
+
     return (
-    <BaseDatosProvider>
-      <AnunciosProvider>
-        <Container>
+      <Container>
         <Head>
               <meta charset="utf-8" />
               <title>Somos SFM - Actualidad </title>
@@ -36,14 +55,12 @@ const Actualidad = () => {
           <div className="inicio">
             <div className="sub-inicio">
                 <div className="sub-cuerpo">
-                    <Noticias tipo = "Actualidad"/>
+                    <Noticias BaseDatos = {BaseDatos} tipo="Actualidad"/>
                 </div>
-                <AdsComputadora />
+                {/* <AdsComputadora /> */}
             </div>
           </div>
-        </Container> 
-      </AnunciosProvider>
-    </BaseDatosProvider>
+      </Container> 
     );
 }
 
