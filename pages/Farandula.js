@@ -3,7 +3,7 @@ import Container from '../components/Container';
 import { useEffect, useState } from 'react';
 import clienteAxios from '../config/axios';
 
-//import AdsComputadora from '../components/AdsComputadora';
+import AdsComputadora from '../components/AdsComputadora';
 import Noticias from '../components/Noticias';
 
 import logo from '../images/logo.jpeg';
@@ -56,7 +56,7 @@ const Farandula = () => {
                     <div className="sub-cuerpo">
                         <Noticias BaseDatos={BaseDatos} tipo="Farándula"/>
                     </div>
-                    {/* <AdsComputadora /> */}
+                    <AdsComputadora />
                 </div>
             </div>
         </Container> 

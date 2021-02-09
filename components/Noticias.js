@@ -1,32 +1,32 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import Noticia from './Noticia';
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
-//import AdsMovil from './AdsMovil';
+import AdsMovil from './AdsMovil';
 
 const Noticias = ({BaseDatos, tipo}) => {
 
     const noticias = BaseDatos; 
 
-    // const multiploDe3 = (n) => {
-    //     var resto = n % 3;
+    const multiploDe3 = (n) => {
+        var resto = n % 3;
 
-    //     if(resto === 0) return true;
+        if(resto === 0) return true;
         
-    //     else return false;
-    // }
+        else return false;
+    }
 
-    // let contador = 0;
+    let contador = 0;
 
-    // const MostarAnuncios = () => {
-    //     contador++
-    //     if (multiploDe3(contador)) {
-    //         return (
-    //             <AdsMovil />
-    //         );
-    //     } else {
-    //         return null;
-    //     }
-    // }
+    const MostarAnuncios = () => {
+        contador++
+        if (multiploDe3(contador)) {
+            return (
+                <AdsMovil />
+            );
+        } else {
+            return null;
+        }
+    }
 
     return (
         <div className="contenedor--noticias">
@@ -46,7 +46,7 @@ const Noticias = ({BaseDatos, tipo}) => {
                                     img = {noticia.img} 
                                     url = {noticia._id}
                                 />
-                                {/* {MostarAnuncios()} */}
+                                {MostarAnuncios()}
                             </Fragment>
                         ))}
                     </Fragment>

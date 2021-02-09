@@ -4,7 +4,7 @@ import Container from '../components/Container';
 
 import clienteAxios from '../config/axios';
 
-//import AdsComputadora from '../components/AdsComputadora';
+import AdsComputadora from '../components/AdsComputadora';
 import Noticias from '../components/Noticias';
 
 import portada from '../images/portada.jpg';
@@ -68,7 +68,7 @@ export default function Home() {
             <Noticias BaseDatos = {BaseDatos} tipo="inicio"/>
           </div>
         </div>
-        {/* <AdsComputadora /> */}
+        <AdsComputadora />
       </div>
     </Container>
   )

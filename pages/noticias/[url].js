@@ -1,6 +1,6 @@
 import Container from '../../components/Container';
 
-//import AdsComputadora from '../../components/AdsComputadora';
+import AdsComputadora from '../../components/AdsComputadora';
 import AdsMovil from '../../components/AdsMovil';
 
 import React, {Fragment} from 'react';
@@ -89,13 +89,17 @@ const PageNoticia = ({datos}) => {
                   <div className="cuerpo--noticias--desarrollo">
                       {datos.cuerpo.map((parrafo) => (
                           <Fragment>
-                              <p key={parrafo} className="cuerpo--noticias--desarrollo--parrafo">{parrafo}</p>
-                              {/* {MostarAnuncios()} */}
+                            {parrafo != "" ? 
+                              <Fragment>
+                                  <p key={parrafo} className="cuerpo--noticias--desarrollo--parrafo">{parrafo}</p>
+                                  {MostarAnuncios()}
+                              </Fragment>
+                            : null}
                           </Fragment>
                       ))}
                   </div>
               </div>
-              {/* <AdsComputadora /> */}
+              <AdsComputadora />
           </div>
       </Container> 
     );
