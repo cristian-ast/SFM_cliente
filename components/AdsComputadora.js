@@ -61,7 +61,9 @@ const AdsComputadora = () => {
                         url = {anuncio1.url}
                         key = {anuncio1.titulo}
                     />
+                    
                 : null}
+                <br/><br/>
                 {anuncio2 ? 
                         <Ads
                             titulo = {anuncio2.titulo}
@@ -70,6 +72,7 @@ const AdsComputadora = () => {
                             key = {anuncio2.titulo}
                         />
                 : null}
+                <br/><br/>
                 {anuncio3 ? 
                         <Ads
                             titulo = {anuncio3.titulo}
