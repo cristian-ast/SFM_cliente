@@ -32,9 +32,15 @@ const AdsMovil = () => {
         <Fragment>
             {anuncio ? 
                 <div className="Ads-movil">
-                    <a href={anuncio.url} target="_blank" rel="noreferrer">
-                        <img src={anuncio.img} alt="Imagen de AdsMovil" className="ImagenAdsMovil" />
-                    </a>
+                    {anuncio.url == "No" ?
+                        <div>
+                            <img src={anuncio.img} alt="Imagen de AdsMovil" className="ImagenAdsMovil" />
+                        </div>
+                    :
+                        <a href={anuncio.url} target="_blank" rel="noreferrer">
+                            <img src={anuncio.img} alt="Imagen de AdsMovil" className="ImagenAdsMovil" />
+                        </a>
+                    }
                 </div>
             : null}
         </Fragment>
