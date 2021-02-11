@@ -33,7 +33,7 @@ const AdsNew = () => {
                                     img = {anuncio.img} 
                                     url = {anuncio.url}
                                 />
-                                <br/><br/>
+                                <br/>
                             </Fragment>
                         ))}
                     </Fragment>
