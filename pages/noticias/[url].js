@@ -1,14 +1,24 @@
 import Container from '../../components/Container';
-
 import AdsComputadora from '../../components/AdsComputadora';
 import AdsMovil from '../../components/AdsMovil';
-
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkIcon from '@material-ui/icons/Link';
+import Button from '@material-ui/core/Button';
 import React, {Fragment} from 'react';
 import Head from 'next/head';
-
+import copy from 'copy-to-clipboard';
 import clienteAxios from '../../config/axios';
 
 const PageNoticia = ({datos}) => {
+
+  const link = `https://somossfm.com/noticias/${datos._id}`;
+
+  const compartirEnFacebook = `https://www.facebook.com/sharer/sharer.php?u=https%3A//somossfm.com/noticias/${datos._id}`;
+  
+  const copiar = () => {
+      copy(link);
+      alert('Enlace copiado');
+  }
 
   const MESES = [
     "Enero",
@@ -84,14 +94,39 @@ const PageNoticia = ({datos}) => {
                       <div className="cuerpo--noticias--titulo__fecha">
                           <h1 className="cuerpo--noticias--titulo">{datos.titulo}</h1>
                           <p className="cuerpo--noticias--fecha">{datos.tipo} {'>>'} {Mes} {Dia}, {Ano}</p>
+                          <div className="contenedor-info-noticia-cuerpo-opciones">
+                            <a href={compartirEnFacebook} target="_blanck" className="contenedor-info-boton">
+                                <Button
+                                    className="z-index-b contenedor-info-noticia-cuerpo-botones" 
+                                    color="primary"
+                                    size="small"
+                                    variant="contained"
+                                    startIcon={<FacebookIcon/>}
+                                >
+                                    Compartir en Facebook
+                                </Button>
+                            </a>
+                            <div className="contenedor-info-boton">
+                                <Button
+                                    className="z-index-b contenedor-info-noticia-cuerpo-botones"
+                                    size="small"
+                                    variant="contained"
+                                    startIcon={<LinkIcon/>}
+                                    onClick={copiar}
+                                >
+                                    Copiar enlace
+                                </Button>
+                            </div>
+                          </div>
                       </div>
                   </div>
+                  
                   <div className="cuerpo--noticias--desarrollo">
                       {datos.cuerpo.map((parrafo) => (
-                          <Fragment>
+                          <Fragment  key={parrafo}>
                             {parrafo != "" ? 
                               <Fragment>
-                                  <p key={parrafo} className="cuerpo--noticias--desarrollo--parrafo">{parrafo}</p>
+                                  <p className="cuerpo--noticias--desarrollo--parrafo">{parrafo}</p>
                                   {MostarAnuncios()}
                               </Fragment>
                             : null}

@@ -480,7 +480,6 @@ a {
 
 .cuerpo--noticias--fecha {
   padding-left: 20px;
-  padding-bottom: 20px;
   font-weight: bolder;
 }
 
@@ -772,4 +771,14 @@ a {
   padding: 10px;
   font-weight: bolder;
   color: red;
+}
+
+.contenedor-info-noticia-cuerpo-opciones {
+  display: flex;
+  width: 90%;
+  padding: 10px;
+}
+
+.contenedor-info-boton {
+  margin-left: 10px;
 }
