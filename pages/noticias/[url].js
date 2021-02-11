@@ -103,7 +103,7 @@ const PageNoticia = ({datos}) => {
                                     variant="contained"
                                     startIcon={<FacebookIcon/>}
                                 >
-                                    Compartir en Facebook
+                                    Compartir
                                 </Button>
                             </a>
                             <div className="contenedor-info-boton">

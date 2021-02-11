@@ -775,7 +775,7 @@ a {
 
 .contenedor-info-noticia-cuerpo-opciones {
   display: flex;
-  width: 90%;
+  width: 100%;
   padding: 10px;
 }
 
