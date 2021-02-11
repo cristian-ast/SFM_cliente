@@ -1,5 +1,6 @@
 import Container from '../../components/Container';
 import AdsComputadora from '../../components/AdsComputadora';
+import AdsNew from '../../components/AdsNew';
 import AdsMovil from '../../components/AdsMovil';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkIcon from '@material-ui/icons/Link';
@@ -92,7 +93,7 @@ const PageNoticia = ({datos}) => {
                         )
                       }
                       <div className="cuerpo--noticias--titulo__fecha">
-                          <h1 className="cuerpo--noticias--titulo">{datos.titulo}</h1>
+                          <p className="cuerpo--noticias--titulo"><b>{datos.titulo}</b></p>
                           <p className="cuerpo--noticias--fecha">{datos.tipo} {'>>'} {Mes} {Dia}, {Ano}</p>
                           <div className="contenedor-info-noticia-cuerpo-opciones">
                             <a href={compartirEnFacebook} target="_blanck" className="contenedor-info-boton">
@@ -120,21 +121,22 @@ const PageNoticia = ({datos}) => {
                           </div>
                       </div>
                   </div>
-                  
-                  <div className="cuerpo--noticias--desarrollo">
-                      {datos.cuerpo.map((parrafo) => (
-                          <Fragment  key={parrafo}>
-                            {parrafo != "" ? 
-                              <Fragment>
-                                  <p className="cuerpo--noticias--desarrollo--parrafo">{parrafo}</p>
-                                  {MostarAnuncios()}
-                              </Fragment>
-                            : null}
-                          </Fragment>
-                      ))}
+                  <div className="Ncuerpo--noticias--desarrollo">
+                    <div className="cuerpo--noticias--desarrollo">
+                        {datos.cuerpo.map((parrafo) => (
+                            <Fragment  key={parrafo}>
+                              {parrafo != "" ? 
+                                <Fragment>
+                                    <p className="cuerpo--noticias--desarrollo--parrafo">{parrafo}</p>
+                                </Fragment>
+                              : null}
+                            </Fragment>
+                        ))}
+                    </div>
+                    <AdsNew/>
                   </div>
               </div>
-              <AdsComputadora />
+              <AdsComputadora /> 
           </div>
       </Container> 
     );
