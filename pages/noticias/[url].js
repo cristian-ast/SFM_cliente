@@ -40,7 +40,7 @@ const PageNoticia = ({datos}) => {
   
   const Mes = MESES[fecha.getMonth()]; // Devuelve el mes actual en formato de texto
 
-  const Dia =parseInt(fecha.getDate()) + 1;
+  const Dia =parseInt(fecha.getDate());
 
   const Ano = fecha.getFullYear();
 
