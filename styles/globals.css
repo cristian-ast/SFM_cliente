@@ -159,6 +159,7 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .redes > a {
@@ -887,8 +888,12 @@ a {
 .campo-form-with2 > textarea {
   padding: 15px;
   font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
 }
 
 .despc {
   color: white;
+}
+
+.alerta-email {
 }
