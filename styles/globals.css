@@ -105,15 +105,6 @@ a {
   height: 3rem;  
 }
 
-.footer {
-  width: 100%;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(41, 41, 41);
-}
-
 .contenidoFooter {
   display: flex;
   flex-wrap: wrap;
@@ -127,6 +118,47 @@ a {
   padding-right: 5px;
   padding-left: 5px;
 
+}
+
+.footerComponent-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgb(41, 41, 41);
+}
+
+.Contenedoe-Send_email {
+
+  width: 100%;
+}
+
+.footer {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Contenedoe-Send_email > h3 {
+  color: white;
+  text-align: center;
+}
+
+.footer > h3 {
+  color: white;
+}
+
+.form-group-send {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-enviar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .redes > a {
@@ -160,7 +192,6 @@ a {
   color: white;
   padding: 5px;
 }
-
 
 .sub-cuerpo {
   width: 100%;
@@ -774,7 +805,7 @@ a {
 
 .panel-editor-campos > input, select, textarea {
   margin-top: 8px;
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto', sans-serif;
 }
 
 .panel-editor-botones {
@@ -847,4 +878,17 @@ a {
 
 .contenedor-info-boton {
   margin-left: 10px;
+}
+
+.campo-form-with2 > input, textarea {
+  width: 320px;
+}
+
+.campo-form-with2 > textarea {
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.despc {
+  color: white;
 }
